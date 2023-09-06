@@ -26,7 +26,7 @@ firstLayer = []
 firstLayerSize = len(firstLayerWeights)
 
 firstLayerOutputs = []
-for i in range(firstLayerSize):
+for i in range(firstLayerSize): # Thus 5 nodes are created
     firstLayer.append(neuron())
     firstLayerOutputs.append(firstLayer[i].output(inputs, firstLayerWeights[i]))
 
@@ -38,8 +38,24 @@ secondLayerWeights = [[0.1,0.1,0.1,1,0.1], [0.1,0.5,0.5,0.5, 1], [0.15,0.1,0.5,1
 secondLayerSize = len(secondLayerWeights)
 
 secondLayerOutputs = []
-for i in range(secondLayerSize):
+for i in range(secondLayerSize): #4 nodes
     secondLayer.append(neuron())
     secondLayerOutputs.append(secondLayer[i].output(firstLayerOutputs, secondLayerWeights[i]))
 
-print(secondLayerOutputs)
+# print(secondLayerOutputs)
+
+outputLayer = []
+
+outputLayerWeights = [[1,2,0,1]] # 1 output node
+outputLayerSize = len(outputLayerWeights)
+
+output = []
+for i in range(outputLayerSize):
+    outputLayer.append(neuron())
+    output.append(outputLayer[i].output(secondLayerOutputs, outputLayerWeights[i]))
+
+if sum(output) > 100:
+    print("Greater than 100!")
+
+else:
+    print("Less than a 100 :(.")
