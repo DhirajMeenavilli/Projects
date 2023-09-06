@@ -2,10 +2,17 @@ import sys
 import numpy as np
 import matplotlib
 
-print(np.exp(1))
+class architechture:
+    def __init__(self, weights):
+        self.weights = weights
+
+    def generate(self):
+        #Based on a 3D array of weights it should generate the amount of layers needed as well as the number of nodes in each layer
+        layers = len(self.weights)
+
 
 class neuron:
-    def __init__(self, curve) -> None:
+    def __init__(self, curve):
         self.bias = 0
         self.curve = curve
     
