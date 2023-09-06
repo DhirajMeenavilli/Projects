@@ -16,18 +16,30 @@ class neuron:
             total += self.compute(inputs[i],weights[i])
         return total # Strictly linear function can be turned into ReLU later
 
-inputs = [3, 5, 7]
-weights = [[1,2,1],[1,1,2]]
+inputs = [3, 5, 7] # Each input is a node
+firstLayerWeights = [[1,2,1],[1,1,2],[2,1,1], [0.1,0.1,0.1], [1,0.5,2]] # Each node is fully connected
 
 # node1 = neuron()
 # node2 = neuron()
 
 firstLayer = []
-firstLayerSize = 2
+firstLayerSize = len(firstLayerWeights)
 
+firstLayerOutputs = []
 for i in range(firstLayerSize):
     firstLayer.append(neuron())
-    print(firstLayer[i].output(inputs, weights[i]))
+    firstLayerOutputs.append(firstLayer[i].output(inputs, firstLayerWeights[i]))
 
 # print(firstLayer[0].output(inputs, weights[0]))
 # print(firstLayer[1].output(inputs, weights[1]))
+secondLayer = []
+
+secondLayerWeights = [[0.1,0.1,0.1,1,0.1], [0.1,0.5,0.5,0.5, 1], [0.15,0.1,0.5,1,0.1], [0.15,0.1,0.1,1,0.15]]
+secondLayerSize = len(secondLayerWeights)
+
+secondLayerOutputs = []
+for i in range(secondLayerSize):
+    secondLayer.append(neuron())
+    secondLayerOutputs.append(secondLayer[i].output(firstLayerOutputs, secondLayerWeights[i]))
+
+print(secondLayerOutputs)
