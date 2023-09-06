@@ -2,9 +2,12 @@ import sys
 import numpy as np
 import matplotlib
 
+print(np.exp(1))
+
 class neuron:
-    def __init__(self) -> None:
+    def __init__(self, curve) -> None:
         self.bias = 0
+        self.curve = curve
     
     def compute(self, input, weight):
         y = input * weight + self.bias
@@ -14,6 +17,23 @@ class neuron:
         total = 0
         for i in range(len(inputs)):
             total += self.compute(inputs[i],weights[i])
+        
+        if self.curve == "ReLU": #So that depending on the curve after the output is calculated it is placed on the function appropriately.
+            if total < 0:
+                total = 0
+            
+            else:
+                pass
+        
+        elif self.curve == "Sigmoid":
+            total = 1/(1+np.exp(total))
+
+        elif self.curve == "Linear":
+            pass
+        
+        else:
+            return "Sorry we don't have that curve available currently"
+        
         return total # Strictly linear function can be turned into ReLU later
 
 inputs = [3, 5, 7] # Each input is a node
@@ -27,8 +47,10 @@ firstLayerSize = len(firstLayerWeights)
 
 firstLayerOutputs = []
 for i in range(firstLayerSize): # Thus 5 nodes are created
-    firstLayer.append(neuron())
+    firstLayer.append(neuron("ReLU"))
     firstLayerOutputs.append(firstLayer[i].output(inputs, firstLayerWeights[i]))
+
+print(firstLayerOutputs)
 
 # print(firstLayer[0].output(inputs, weights[0]))
 # print(firstLayer[1].output(inputs, weights[1]))
@@ -39,10 +61,10 @@ secondLayerSize = len(secondLayerWeights)
 
 secondLayerOutputs = []
 for i in range(secondLayerSize): #4 nodes
-    secondLayer.append(neuron())
+    secondLayer.append(neuron("Sigmoid"))
     secondLayerOutputs.append(secondLayer[i].output(firstLayerOutputs, secondLayerWeights[i]))
 
-# print(secondLayerOutputs)
+print(secondLayerOutputs)
 
 outputLayer = []
 
@@ -51,8 +73,10 @@ outputLayerSize = len(outputLayerWeights)
 
 output = []
 for i in range(outputLayerSize):
-    outputLayer.append(neuron())
+    outputLayer.append(neuron("Linear"))
     output.append(outputLayer[i].output(secondLayerOutputs, outputLayerWeights[i]))
+
+print(output)
 
 if sum(output) > 100:
     print("Greater than 100!")
