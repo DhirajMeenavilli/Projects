@@ -12,22 +12,31 @@ class architechture:
 
     def generate(self):
         #Based on a 3D array of weights it should generate the amount of layers needed as well as the number of nodes in each layer
-        layeroutputs = self.inputs
+        self.modelOutput = self.inputs
         results = []
+        layers = []
+        
         for i in range(len(self.weights)):
+            
             results.append([])
+            layers.append([])
+            
             for j in range(len(self.weights[i])):
-                results[i].append(neuron(self.curves[i]).output(layeroutputs,self.weights[i][j]))
-            layeroutputs = results[i]
-        self.modelOutput = layeroutputs
-        return layeroutputs
+                layers[i].append(neuron(self.curves[i]))
+                results[i].append(layers[i][j].output(self.modelOutput,self.weights[i][j]))
+            
+            self.layers = layers
+            self.modelOutput = results[i]
+        print(self.layers)
+        return self.modelOutput
 
-    #Now I have to be able to backpropogate to alter the weights and bias of each neuron.
     def error(self):
         if self.loss == "MSE":
             modelError = (sum(self.modelOutput) - self.output)**2 
         
         return modelError
+
+    #In order to do backprop I need to 1. refer back to my notes about it from 466 but secondly I need to figure out how I can do another forward pass after without using the generate function
 
 class neuron:
     def __init__(self, curve):
@@ -60,11 +69,14 @@ class neuron:
             return "Sorry we don't have that curve available currently"
         
         return total # Strictly linear function can be turned into ReLU later
+    
+    def __repr__(self) -> str:
+        return "O"
 
 inputs = [3, 5, 7, 4, 5, 2] # Each input is a node
 trueOutput = 164.075
 
-firstLayerWeights = [[1,2,1,0,1,1],[1,1,2,0,1,1],[2,1,1,0,1,1], [0.1,0.1,0.1,0,1,1], [1,0.5,2,0,1,1]] # Each node is fully connected
+firstLayerWeights = [[1,2,1,0,1,1],[1,1,2,0,1,1],[2,1,1,0,1,1],[0.1,0.1,0.1,0,1,1],[1,0.5,2,0,1,1]] # Each node is fully connected
 
 # node1 = neuron()
 # node2 = neuron()
@@ -123,8 +135,8 @@ print(neuralNet.error())
 # print(architechtureOutput)
 
 
-if output == architechtureOutput:
-    print("Neural Net class successfully generated the same output as line by line coding")
+# if output == architechtureOutput:
+#     print("Neural Net class successfully generated the same output as line by line coding")
 
-else:
-    print("Failed to gnerate the same result")
+# else:
+#     print("Failed to generate the same result")
