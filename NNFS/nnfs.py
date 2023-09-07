@@ -3,10 +3,11 @@ import numpy as np
 import matplotlib
 
 class architechture:
-    def __init__(self, inputs, weights):
+    def __init__(self, inputs, weights, curves):
         # self.layers = [input] Have to decide how to use this properly but that's a later question
         self.inputs = inputs
         self.weights = weights
+        self.curves = curves
 
     def generate(self):
         #Based on a 3D array of weights it should generate the amount of layers needed as well as the number of nodes in each layer
@@ -14,7 +15,7 @@ class architechture:
         for i in range(len(self.weights)):
             results = []
             for j in range(len(self.weights[i])):
-                results.append(neuron("Linear").output(layeroutputs,self.weights[i][j]))
+                results.append(neuron(self.curves[i]).output(layeroutputs,self.weights[i][j]))
             layeroutputs = results
 
         return layeroutputs
@@ -63,7 +64,7 @@ firstLayerSize = len(firstLayerWeights)
 
 firstLayerOutputs = []
 for i in range(firstLayerSize): # Thus 5 nodes are created
-    firstLayer.append(neuron("Linear"))
+    firstLayer.append(neuron("ReLU"))
     firstLayerOutputs.append(firstLayer[i].output(inputs, firstLayerWeights[i]))
 
 # print(firstLayerOutputs)
@@ -77,7 +78,7 @@ secondLayerSize = len(secondLayerWeights)
 
 secondLayerOutputs = []
 for i in range(secondLayerSize): #4 nodes
-    secondLayer.append(neuron("Linear"))
+    secondLayer.append(neuron("Sigmoid"))
     secondLayerOutputs.append(secondLayer[i].output(firstLayerOutputs, secondLayerWeights[i]))
 
 # print(secondLayerOutputs)
@@ -92,7 +93,7 @@ for i in range(outputLayerSize):
     outputLayer.append(neuron("Linear"))
     output.append(outputLayer[i].output(secondLayerOutputs, outputLayerWeights[i]))
 
-print(output)
+# print(output)
 
 # if sum(output) > 100:
 #     print("Greater than 100!")
@@ -102,10 +103,12 @@ print(output)
 
 weights = [firstLayerWeights, secondLayerWeights, outputLayerWeights]
 
-neuralNet = architechture(inputs,weights)
+curves = ["ReLU", "Sigmoid", "Linear"]
+
+neuralNet = architechture(inputs,weights, curves)
 architechtureOutput = neuralNet.generate()
 
-print(architechtureOutput)
+# print(architechtureOutput)
 
 
 if output == architechtureOutput:
