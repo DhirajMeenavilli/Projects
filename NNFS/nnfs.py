@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib
 
 class architechture:
-    def __init__(self, inputs, output, weights, curves, loss):
+    def __init__(self, inputs, output, weights, curves, loss): # TODO: Preferablly intialise it with a set of weights that are all quite small just from a specification of how many nodes in a layer
         self.inputs = inputs
         self.output = output
         self.weights = weights
@@ -36,7 +36,7 @@ class architechture:
         
         return modelError
 
-    #In order to do backprop I need to 1. refer back to my notes about it from 466 but secondly I need to figure out how I can do another forward pass after without using the generate function
+    # TODO: In order to do backprop I need to 1. refer back to my notes about it from 466 but secondly I need to figure out how I can do another forward pass after without using the generate function
 
 class neuron:
     def __init__(self, curve):
