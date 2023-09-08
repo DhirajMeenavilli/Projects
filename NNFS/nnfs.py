@@ -37,6 +37,23 @@ class architechture:
         return modelError
 
     # TODO: In order to do backprop I need to 1. refer back to my notes about it from 466 but secondly I need to figure out how I can do another forward pass after without using the generate function
+    def forwardPass(self):
+        self.modelOutput = self.inputs
+        results = []
+        
+        for i in range(len(self.weights)):
+            
+            results.append([])
+
+            for j in range(len(self.weights[i])):
+                results[i].append(self.layers[i][j].output(self.modelOutput,self.weights[i][j]))
+            
+            self.modelOutput = results[i]
+        
+        return self.modelOutput
+
+    # def backProp(self):
+
 
 class neuron:
     def __init__(self, curve):
@@ -125,7 +142,7 @@ outputLayerWeights = [[1,2,0,1]] # 1 output node
 
 weights = [firstLayerWeights, secondLayerWeights, outputLayerWeights]
 
-curves = ["Linear", "Linear", "Linear"]
+curves = ["ReLU", "ReLU", "ReLU "]
 
 loss = "MSE"
 
