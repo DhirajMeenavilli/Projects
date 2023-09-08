@@ -96,7 +96,7 @@ trueOutput = 164.075
 
 userArchitechture = [5,4,1]
 
-firstLayerWeights = [[1,2,1,0,1,1],[1,1,2,0,1,1],[2,1,1,0,1,1],[0.1,0.1,0.1,0,1,1],[1,0.5,2,0,1,1]] # Each node is fully connected
+# firstLayerWeights = [[1,2,1,0,1,1],[1,1,2,0,1,1],[2,1,1,0,1,1],[0.1,0.1,0.1,0,1,1],[1,0.5,2,0,1,1]] # Each node is fully connected
 
 # node1 = neuron()
 # node2 = neuron()
@@ -115,7 +115,7 @@ firstLayerWeights = [[1,2,1,0,1,1],[1,1,2,0,1,1],[2,1,1,0,1,1],[0.1,0.1,0.1,0,1,
 # print(firstLayer[1].output(inputs, weights[1]))
 # secondLayer = []
 
-secondLayerWeights = [[0.1,0.1,0.1,1,0.1], [0.1,0.5,0.5,0.5, 1], [0.15,0.1,0.5,1,0.1], [0.15,0.1,0.1,1,0.15]]
+# secondLayerWeights = [[0.1,0.1,0.1,1,0.1], [0.1,0.5,0.5,0.5, 1], [0.15,0.1,0.5,1,0.1], [0.15,0.1,0.1,1,0.15]]
 # secondLayerSize = len(secondLayerWeights)
 
 # secondLayerOutputs = []
@@ -127,7 +127,7 @@ secondLayerWeights = [[0.1,0.1,0.1,1,0.1], [0.1,0.5,0.5,0.5, 1], [0.15,0.1,0.5,1
 
 # outputLayer = []
 
-outputLayerWeights = [[1,2,0,1]] # 1 output node
+# outputLayerWeights = [[1,2,0,1]] # 1 output node
 # outputLayerSize = len(outputLayerWeights)
 
 # output = []
@@ -155,8 +155,7 @@ for i in range(len(userArchitechture)):
         for k in range(len(prevlayer)):
             weights[i][j].append(0.5)
     prevlayer = weights[i]
-    
-print(weights)
+
 curves = ["ReLU", "ReLU", "ReLU"]
 
 loss = "MSE"
