@@ -31,6 +31,7 @@ class architechture:
         return self.modelOutput
 
     def error(self):
+        print(self.modelOutput, self.output)
         if self.loss == "MSE":
             modelError = (sum(self.modelOutput) - self.output)**2 
         
@@ -88,10 +89,12 @@ class neuron:
         return total # Strictly linear function can be turned into ReLU later
     
     def __repr__(self) -> str:
-        return "O"
+        return "O" + " " + self.curve
 
 inputs = [3, 5, 7, 4, 5, 2] # Each input is a node
 trueOutput = 164.075
+
+userArchitechture = [5,4,1]
 
 firstLayerWeights = [[1,2,1,0,1,1],[1,1,2,0,1,1],[2,1,1,0,1,1],[0.1,0.1,0.1,0,1,1],[1,0.5,2,0,1,1]] # Each node is fully connected
 
@@ -140,15 +143,28 @@ outputLayerWeights = [[1,2,0,1]] # 1 output node
 # else:
 #     print("Less than a 100 :(.")
 
-weights = [firstLayerWeights, secondLayerWeights, outputLayerWeights]
+# weights = [firstLayerWeights, secondLayerWeights, outputLayerWeights]
 
-curves = ["ReLU", "ReLU", "ReLU "]
+weights = []
+prevlayer = inputs
+
+for i in range(len(userArchitechture)):
+    weights.append([])
+    for j in range(userArchitechture[i]):
+        weights[i].append([])
+        for k in range(len(prevlayer)):
+            weights[i][j].append(0.5)
+    prevlayer = weights[i]
+    
+print(weights)
+curves = ["ReLU", "ReLU", "ReLU"]
 
 loss = "MSE"
 
 neuralNet = architechture(inputs,trueOutput,weights,curves,loss)
 architechtureOutput = neuralNet.generate()
 print(neuralNet.error())
+print(neuralNet.forwardPass())
 # print(architechtureOutput)
 
 
