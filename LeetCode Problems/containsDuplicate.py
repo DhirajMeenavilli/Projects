@@ -27,7 +27,7 @@ def heapify_down(arr, n, i):
 
 exit = False
 duplicates = False
-
+nums = [1,1,1,3,3,4,3,2,4,2]
 heapify(nums)
 
 i=0
