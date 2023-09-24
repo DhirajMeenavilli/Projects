@@ -1,6 +1,8 @@
 import sys
 import numpy as np
 import matplotlib
+# You know what's cool is I have no other job or thing to do than just my job or my school or whatever I don't know why I get so bogeed down in doing all these things and feeling burned out instead of just tryna tap in and remember this is all I have to do right now just forget about the next thing or whatever you'll get it.
+# Use a library if you get stuck especially if it's a tool like backprop. You can always take it out and recreate it yourself.
 
 class architechture:
     def __init__(self, inputs, output, weights, curves, loss): # TODO: Preferablly intialise it with a set of weights that are all quite small just from a specification of how many nodes in a layer
