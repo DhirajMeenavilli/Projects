@@ -1,0 +1,1 @@
+#This is where I'm gonna try out weird new tools I run across in some documentation and just play around with random problems I make up to contrive a reason to use various tools.
