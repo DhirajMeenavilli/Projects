@@ -1,0 +1,3 @@
+# The Data Quality Checker, which measures how a given dataset compares on the 6 dimensions of Completeness, Manipulability, Logicallity, Representivenss, Decompositionality and Richness.
+# The stack required to complete this project is possibly web hosting, but defenitly a front end to take in files, a server to make sure it's not malware, a python program to generate the scores on each of the 6 dimensions, and a middleware to send the info back and forth so that the graph can be created.
+# It Likely makes the most sense to start at the back, with the proggramttic logic, and the spider/radar graph and then abstract up to the Web/UI part where users could input and see their datas graph
