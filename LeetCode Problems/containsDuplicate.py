@@ -206,7 +206,7 @@ else:
 #     print("oh nart!")
 
 
-class Solution:
+class Solution: # I like mine the most, as it's the most hackeresque, it's a very engineering/ducttape/get it done style of coding. Not beautiful but functional.
     def containsDuplicate(self, nums: [int]) -> bool:
         #Remember no to focus on if you're successful, but to just breathe and to focus just on doing the task at hand clearly and well.
         for i in range(len(nums)):
@@ -214,4 +214,26 @@ class Solution:
                 #which is ahack, but it is an effective hack, but not a solution. Within 60 values neighborhood is good but that's as effective a hack as I can get.
                 return True
 
-        return False #This is actually a viable solution, but simply takes too long. Because it has to go through the entire list which can mea O(N)
+        return False #This is actually a viable solution, but simply takes too long. Because it has to go through the entire list which can mean O(N * 60) = O(N) 
+
+class Solution:
+    def containsDuplicate(self, nums: [int]) -> bool:
+        nums.sort() #This requires O(N log N) time hence the code requires O(N log N) time.
+        for i in range(len(nums)):
+            if i == len(nums) - 1:
+                return False
+            
+            else:
+                if nums[i] == nums[i+1]:
+                    return True
+
+class Solution:
+    def containsDuplicate(self, nums: [int]) -> bool:
+        hashset = set() #Created Hashset, and can check an in statement in O(1) time hence doing it at most N times = O(N).
+
+        for n in nums:
+            if n in hashset:
+                return True
+            hashset.add(n)
+
+        return False
