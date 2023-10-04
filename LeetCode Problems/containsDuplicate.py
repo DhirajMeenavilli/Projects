@@ -204,3 +204,14 @@ else:
     
 # except Exception:
 #     print("oh nart!")
+
+
+class Solution:
+    def containsDuplicate(self, nums: [int]) -> bool:
+        #Remember no to focus on if you're successful, but to just breathe and to focus just on doing the task at hand clearly and well.
+        for i in range(len(nums)):
+            if nums[i] in nums[i+1: i+60]: #The obvious problem being each number is in the array so why don't we pop it first. But now we've modified it to check every value from that number onwards. This now works, because effectively it only has to check within a thousand values of the term, 
+                #which is ahack, but it is an effective hack, but not a solution. Within 60 values neighborhood is good but that's as effective a hack as I can get.
+                return True
+
+        return False #This is actually a viable solution, but simply takes too long. Because it has to go through the entire list which can mea O(N)
