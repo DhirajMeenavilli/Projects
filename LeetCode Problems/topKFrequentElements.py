@@ -25,7 +25,7 @@ def topKFrequent(self, nums: [int], k: int) -> [int]: # Very good on space but b
         for j in inverted_store[most_frequent[i]]: # This is just to cope with the fact that unique does not mean that each frequency gets only one value
             return_list.append(j)
 
-        if len(return_list) == k: # Just to avoid the fact that since the arrays can store multiple numbers we don't want the return list getting too big.
-            return return_list
+        if len(return_list) >= k: # Just to avoid the fact that since the arrays can store multiple numbers we don't want the return list getting too big.
+            return return_list[:k] # To solve both the previous problems we could actually just do return return_list[:k] just in case and we'd check >=, and improve robustness without additional time cost
     
-    return return_list
+    return return_list[:k] #If the prior condition wasn't triggered we can assume that retur_list will be of size k but just to be careful we can do the same here
