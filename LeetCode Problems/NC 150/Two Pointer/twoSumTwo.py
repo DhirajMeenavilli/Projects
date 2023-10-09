@@ -1,5 +1,5 @@
 class Solution:
-    def twoSum(self, numbers: [int], target: int) -> [int]:# Slower than most, and less space efficient, but I love it, I really learned the nitty gritty of two pointers for sure, I'm gonna watch the video tommorow and get absolutely cooked.
+    def twoSum(numbers: [int], target: int) -> [int]:# Slower than most, and less space efficient, but I love it, I really learned the nitty gritty of two pointers for sure, I'm gonna watch the video tommorow and get absolutely cooked.
         print(numbers)
         store = {} # We can append eacvh unique item and up the count of said value by 1 by and that should effectively tell us where the indexes are, because it is in sorted order so we can use that to basically jump, it's still n ^2 but on a considerably smaller hash set thats possibly a fraction of the value, though this can't account for multiple occurences of the value being the solution. Actually I guess if we see if the value associated with the shit is > 1 and it == target then we can just return the first and second index of the value
 
@@ -60,3 +60,17 @@ class Solution:
             l_iterator += 1
 
         return [0,0]
+
+def twoSum(numbers: [int], target: int) -> [int]: # The wildly more simple way of doing it, but it's just a bit slower, between 5 and 10 senonds, but space complexity is O(1).
+    l = 0
+    r = len(numbers) - 1
+
+    for i in range(len(numbers)):
+        if numbers[l] + numbers[r] == target:
+            return [l+1, r+1]
+        
+        elif numbers[l] + numbers[r] < target:
+            l += 1
+        
+        elif numbers[l] + numbers[r] > target:
+            r -= 1
