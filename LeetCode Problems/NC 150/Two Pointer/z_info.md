@@ -1,1 +1,2 @@
 # The trick as far as there is one beyond just having 2 pointers is when and how to move them, which you kind of have to deduce by thinking about what is the actual advantage of moving the pointer, and then how do you maximise that. Easier said than done for sure.
+# It seems to always be that you can start the pointers at either end of the array, and then just increment/decrement based on which one is smaller.
