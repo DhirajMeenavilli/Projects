@@ -5,7 +5,7 @@ class Solution:
         if len(tokens) == 0:
             return 0
 
-        if len(tokens) == 1:
+        if len(tokens) == 1:# The trick was to relaise I didn't have to store multiplications I could just execute them on the last two elements of the stack and just pop em.
             return int(tokens[0])
 
         value = 0
