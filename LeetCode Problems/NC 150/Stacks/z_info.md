@@ -1,0 +1,1 @@
+# Don't know about any tricks as of yet. But I'm defenitley feeling like just append and pop to mimic a stack and then do it according to case with simplifying the problem being the main thinking bit of this.
