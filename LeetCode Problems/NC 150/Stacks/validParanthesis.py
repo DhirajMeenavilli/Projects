@@ -1,4 +1,4 @@
-def generateParenthesis(self, n: int) -> List[str]: # I have to effectively implement this with a stack. So append and pop from a stack
+def generateParenthesis(self, n: int) -> [str]: # I have to effectively implement this with a stack. So append and pop from a stack
 
     stack = []
     res = []
