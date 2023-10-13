@@ -9,3 +9,4 @@
 ## Two Pointer
 1. 3Sum
 2. Trap Rain
+3. Valid Parantheses
