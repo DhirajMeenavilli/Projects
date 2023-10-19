@@ -34,3 +34,62 @@
         
 #         elif matrix[mid1][mid2] == target:
 #             return True
+
+# class Solution: Generally ok, better algorithimically but amakes me realise I'm just getting the snot beat out of me as a proggrammer
+#     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool: 
+#         l = 0
+#         r = len(matrix) - 1
+
+#         while l < r:
+#             mid = (l+r)//2
+
+#             if matrix[mid][0] > target:
+#                 r = mid
+            
+#             elif matrix[mid][len(matrix[mid])-1] < target:
+#                 l = mid
+
+#             else:
+#                 l,r = mid, mid
+
+#         if len(matrix) > 1:
+#             arr = matrix[mid]
+        
+#         else:
+#             arr = matrix[0]
+
+#         print(arr)
+#         l = 0
+#         r = len(arr) - 1
+
+#         while l != r -1:
+#             mid = (l+r)//2
+
+#             if arr[mid] > target:
+#                 r = mid
+
+#             elif arr[mid] < target:
+#                 l = mid
+            
+#             else:
+#                 return True
+        
+#         if len(arr) > 2:
+#             return False
+        
+#         if len(arr) > 1:
+#             if arr[0] == target or arr[1] == target:
+#                 return True
+            
+#             else:
+#                 return False
+        
+#         if len(arr) > 0:
+#             if arr[0] == target:
+#                 return True
+        
+#             else:
+#                 return False
+
+#         if len(arr) == 0:
+#             return False
