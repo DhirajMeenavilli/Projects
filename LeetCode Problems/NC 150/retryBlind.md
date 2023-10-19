@@ -10,3 +10,6 @@
 1. 3Sum
 2. Trap Rain
 3. Valid Parantheses
+
+## Bin Search
+1. Search matrix
