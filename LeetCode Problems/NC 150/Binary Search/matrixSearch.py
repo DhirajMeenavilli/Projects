@@ -93,3 +93,74 @@
 
 #         if len(arr) == 0:
 #             return False
+
+# Awful Sol:
+
+class Solution:
+    def searchMatrix(self, matrix: [[int]], target: int) -> bool: 
+        l = 0
+        r = len(matrix) - 1
+
+        while l < r:
+            mid = (l+r)//2
+
+            if matrix[mid][0] > target:
+                r = mid
+            
+            elif matrix[mid][len(matrix[mid])-1] < target:
+                if l == mid:
+                    mid += 1
+                    break
+
+                l = mid
+
+            else:
+                l,r = mid, mid
+
+        if len(matrix) > 1:
+            arr = matrix[mid]
+        
+        else:
+            arr = matrix[0]
+
+        print(arr)
+        l = 0
+        r = len(arr) - 1
+
+        while l < r -1:
+            mid = (l+r)//2
+
+            if arr[mid] > target:
+                r = mid
+
+            elif arr[mid] < target:
+                l = mid
+            
+            else:
+                return True
+
+        if len(arr) > 2:
+            if arr[l] == target:
+                return True
+            
+            if arr[r] == target:
+                return True
+
+            return False
+        
+        if len(arr) > 1:
+            if arr[0] == target or arr[1] == target:
+                return True
+            
+            else:
+                return False
+        
+        if len(arr) > 0:
+            if arr[0] == target:
+                return True
+        
+            else:
+                return False
+
+        if len(arr) == 0:
+            return False
