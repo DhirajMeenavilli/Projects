@@ -1,0 +1,3 @@
+# What Would You Have Thought
+
+What if you wrote all your notes into some application, and you had a question, that you could query to your past self effectively what would you say to you from the past, based on the thoughts they left to themselves in the future. (They would also probably leave behind the best version of themselves and you can kinda mark your progress/ see if you actually have a new thought.)
