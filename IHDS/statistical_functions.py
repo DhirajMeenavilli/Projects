@@ -1,0 +1,1 @@
+# Should automatically do statiscal analysis on a dataset and break it down for me, have a UI very simmilar to Office 365, and be able to answer questions
