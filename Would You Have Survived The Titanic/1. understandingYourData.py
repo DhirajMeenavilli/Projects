@@ -87,3 +87,9 @@ print(Titanic_Dataset.corr())
 # Pclass had a strong negative correlation with Age and with Fare, most so with Fare, which is logical but I wonder how it would change post encoding switch.
 # But this also means age even though it has a strong correlation in some sense with Pclass and Pclass with Survival it's not a very strong indicator by itself of Survival.
 # SibSp is strongly correlated with Parch, that could mean maybe it was one family?
+
+
+# You can also pull data via dot, and column notations
+
+print(Titanic_Dataset.Survived)
+print(Titanic_Dataset[['Pclass','Age','Fare']])
