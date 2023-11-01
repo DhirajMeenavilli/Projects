@@ -1,3 +1,9 @@
+# EDA
+Files: 1-3
+
+# Introductory ML Processess
+Files: 4-8
+
 # Next Steps
 
 Kaggle
