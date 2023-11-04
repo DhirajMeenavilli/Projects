@@ -67,3 +67,4 @@ for i in range(len(splits)):
     predictions = titanic_model.predict(splits[i][1])
 
     print(accuracy_score(val_y,predictions)) # The second is the best closely tailed by the third which tells us that imputation is defenitley a better method of dealing with missing values than simply dropping columns, and far better than just dropping the row.
+    # It should be noted that if there was basically just one column and it was all NaN values dropping that column and imputation will likley perform the same or imputation may even be slightly better.
