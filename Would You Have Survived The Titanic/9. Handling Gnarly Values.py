@@ -26,8 +26,9 @@ from sklearn.impute import SimpleImputer
 
 imputer = SimpleImputer()
 
-imputationTrain = pd.DataFrame(imputer.fit_transform(train_X))
-imputationVal = pd.DataFrame(imputer.transform(val_X))
+imputationTrain = pd.DataFrame(imputer.fit_transform(train_X)) 
+imputationVal = pd.DataFrame(imputer.transform(val_X))# There also is issues of doing things like filling in a value can destory info like if 2nd Bedroom isn't filled out, it might be that it's missing or that not recorded because there is no second bedroom, so filling it in with any value might not be great 
+# but filling it with a bad value like 0 is completely terrible if it's reffering to something like sqft. Because the model has to then work so much harder to understand that relationship via multiplication and activation.
 
 # Imputation removes column names so we have to put them back.
 
