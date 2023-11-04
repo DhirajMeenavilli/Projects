@@ -2,7 +2,7 @@ import pandas as pd
 
 Titanic_train = pd.read_csv('Projects/Would You Have Survived The Titanic/Models Training Passengers.csv')
 
-Titanic_train = Titanic_train.dropna(axis=0) # Always deal with nan and weird values prior to passing to model
+Titanic_train = Titanic_train.dropna(axis=0) # Always deal with nan and weird values prior to passing to model. This causes y to be smaller too, so it doens't even make sense.
 
 features = ['PassengerId','Pclass','Age','SibSp','Parch','Fare']
 
