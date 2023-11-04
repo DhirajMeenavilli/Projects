@@ -69,3 +69,4 @@ for i in range(len(splits)):
 
     print(accuracy_score(val_y,predictions)) # The second is the best closely tailed by the third which tells us that imputation is defenitley a better method of dealing with missing values than simply dropping columns, and far better than just dropping the row.
     # It should be noted that if there was basically just one column and it was all NaN values dropping that column and imputation will likley perform the same or imputation may even be slightly better.
+    # The drop row thing also only works if you have the NaN values in the same features for both train and test dataset. Otherwise you have a whole another issue to deal with, which is train, validation, and test splitting to make sure the distributions, etc. are equvialent.
