@@ -98,12 +98,31 @@ print("MAE from Approach 2 (Drop categorical variables):",score_dataset(label_X_
 print()
 # 3. One Hot Encoding: Creating n columns one for each of the n unique values in a catergorical column and binarying each observation to each with either 1 or 0 for ids this unique value or not this unique value/ 
 
+# For large datasets with many rows, one-hot encoding can greatly expand the size of the dataset. For this reason, we typically will only one-hot encode columns with relatively low cardinality. Then, high cardinality columns can either be dropped from the dataset, or we can use ordinal encoding.
+# As an example, consider a dataset with 10,000 rows, and containing one categorical column with 100 unique entries. This results in 10,000 * 99 for one hot encoding, original column + 99 = 100 columns for 100 uniques.
+
+# Get number of unique entries in each column with categorical data
+object_nunique = list(map(lambda col: X_train[col].nunique(), object_cols))
+d = dict(zip(object_cols, object_nunique))
+
+# Print number of unique entries by column, in ascending order
+sorted(d.items(), key=lambda x: x[1])
+
+# Columns that will be one-hot encoded
+low_cardinality_cols = [col for col in object_cols if X_train[col].nunique() < 10]
+
+# Columns that will be dropped from the dataset
+high_cardinality_cols = list(set(object_cols)-set(low_cardinality_cols))
+
+print('Categorical columns that will be one-hot encoded:', low_cardinality_cols)
+print('\nCategorical columns that will be dropped from the dataset:', high_cardinality_cols)
+
 from sklearn.preprocessing import OneHotEncoder
 
 # Apply one-hot encoder to each column with categorical data
 OH_encoder = OneHotEncoder(handle_unknown='ignore', sparse=False)
-OH_cols_train = pd.DataFrame(OH_encoder.fit_transform(X_train[object_cols]))
-OH_cols_valid = pd.DataFrame(OH_encoder.transform(X_valid[object_cols]))
+OH_cols_train = pd.DataFrame(OH_encoder.fit_transform(X_train[low_cardinality_cols]))
+OH_cols_valid = pd.DataFrame(OH_encoder.transform(X_valid[low_cardinality_cols]))
 
 # One-hot encoding removed index; put it back
 OH_cols_train.index = X_train.index
