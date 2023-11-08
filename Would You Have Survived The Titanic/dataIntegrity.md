@@ -9,3 +9,5 @@ Data may be structured the way it is for multiple reasons, thus there are many m
 3. The data may be complete, but not generalisable i.e. no more houses are being built in the area from which you are pulling sample data, and you are trying to predict on a neighboring area, the only solution is to account for potential drift in the time since.
 
 4. The data may be incomplete, to which the only solution is collecting and cleaning the data.
+
+5. The data may have target leakage, as in one of the features available during training won't be available during deployment and prediction time. The data may also have train-test contimanation where, the test data has already been fit to virtue of preprocessing done prior to splitting the data into train and test.
