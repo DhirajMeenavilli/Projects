@@ -55,7 +55,7 @@ drop_X_valid = X_valid.select_dtypes(exclude=['object'])
 
 print(drop_X_train.head())
 print()
-print("MAE from Approach 1 (Drop categorical variables):",score_dataset(drop_X_train, drop_X_valid, y_train, y_valid))
+print("Accuracy from Approach 1 (Drop categorical variables):",score_dataset(drop_X_train, drop_X_valid, y_train, y_valid))
 print()
 # 2. Ordinal Encoding (Assigning each unique value a unique interger): This can be useful but simmilar catergorical values get transformed to very different values and information is possibly lost, so can be tuned for better encoding. 
 
@@ -94,7 +94,7 @@ label_X_valid[object_cols] = ordinal_encoder.transform(X_valid[object_cols])
 
 print(label_X_train.head())
 print()
-print("MAE from Approach 2 (Drop categorical variables):",score_dataset(label_X_train, label_X_valid, y_train, y_valid))
+print("Accuracy from Approach 2 (Drop categorical variables):",score_dataset(label_X_train, label_X_valid, y_train, y_valid))
 print()
 # 3. One Hot Encoding: Creating n columns one for each of the n unique values in a catergorical column and binarying each observation to each with either 1 or 0 for ids this unique value or not this unique value/ 
 
@@ -142,4 +142,4 @@ OH_X_valid.columns = OH_X_valid.columns.astype(str)
 
 print(OH_X_train.head())
 print()
-print("MAE from Approach 3 (Drop categorical variables):",score_dataset(OH_X_train, OH_X_valid, y_train, y_valid)) # One hot encoding generally works best and it did in this case, very cool.
+print("Accuracy from Approach 3 (Drop categorical variables):",score_dataset(OH_X_train, OH_X_valid, y_train, y_valid)) # One hot encoding generally works best and it did in this case, very cool.
