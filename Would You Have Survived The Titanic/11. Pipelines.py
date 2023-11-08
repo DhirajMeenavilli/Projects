@@ -43,7 +43,7 @@ from sklearn.metrics import accuracy_score
 my_pipeline = Pipeline(steps=[('Preprocessor', pre_processor), ('model', model)])
 my_pipeline.fit(X_train_final, y_train)
 
-preds = my_pipeline.predict(X_valid_final)
+preds = my_pipeline.predict(X_valid_final) # Using this you don't need to run the preprocessing and all that again you just litterally build and use the pipeline. That's very cool, very plug and play.
 print("Accuracy: ", accuracy_score(y_valid, preds)) # Just from this got 84%, ususally around 50-70%
 
 #2. Fewer Bugs: There are fewer opportunities to misapply a step or forget a preprocessing step.
