@@ -9,3 +9,5 @@ If not however it may reveal to what more things are certain to be beyond our gr
 In addition, it may very well present oppurtunities for new investing practices, such as effectively short selling hype, the way value investors buy statistcally profitable bundles of cheap securities. Perhaps they may even reveal things about the others such as growth about value and value about growth, fragility about value and value about fragility. As well it may present oppurtunities to reconsider a host of other decisions entirely built on on flawed foundations.
 
 It appears most RL and other neural network techniques also tend to be dependant on assumptions of normality and tending toward normality sufficient a large sample size.
+
+If this is the case then perhaps an RL model can be devolped such that it can more quickly determine what kind of function, or tail coefficient a distribution should be generated with and thus behave accordingly.
