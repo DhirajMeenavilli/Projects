@@ -11,3 +11,5 @@ In addition, it may very well present oppurtunities for new investing practices,
 It appears most RL and other neural network techniques also tend to be dependant on assumptions of normality and tending toward normality sufficient a large sample size.
 
 If this is the case then perhaps an RL model can be devolped such that it can more quickly determine what kind of function, or tail coefficient a distribution should be generated with and thus behave accordingly.
+
+Watching for large deviations within a collection of data i.e. outliers of some consistent but low frequency is likely the best way to find if the domain is fat tailed, and so dangerous for things like an RL model to learn/predict on. 
