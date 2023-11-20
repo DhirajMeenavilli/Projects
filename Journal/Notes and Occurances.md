@@ -13,3 +13,5 @@ It appears most RL and other neural network techniques also tend to be dependant
 If this is the case then perhaps an RL model can be devolped such that it can more quickly determine what kind of function, or tail coefficient a distribution should be generated with and thus behave accordingly.
 
 Watching for large deviations within a collection of data i.e. outliers of some consistent but low frequency is likely the best way to find if the domain is fat tailed, and so dangerous for things like an RL model to learn/predict on. 
+
+However the solution cannot be to just simply do nothing, even for us as people we have to learn to take appropriately hedged bets meaning thurough understandings of risk, which itself may be something that might be difficult to analyse from a statistical perspective i.e with use of past data, though it may not be. This may be one of the interesting ideas to investigate.
