@@ -23,3 +23,5 @@ Hence Taleb advises using the MAD for both stability,and communicability of an i
 ## With Repect to Work and Learning
 
 It is not unreasonable to approach any obstacle of life or work as things to be tackled by a process of refined reasearch, with hypothesis, observations, analysis, and what that could possibly tell you about the domain with which you're interacting.
+
+I find more and more that where things, fail, break, and don't break is substantially more important to understand then where they do. I suppose this is encapsulated in the 2 phrases, "It ain't what you know, it's what you know for sure but just aint so." and "I want to know where I'll die so I'll never go there". I think possibly just following those 2 ideas and constantly looking for where failure is likely and avoiding them leaves just the success to take care of itself.
