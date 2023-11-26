@@ -24,6 +24,10 @@ Infinite variance models based on thing like Cauchy Stable or 2 sided Pareto or 
 
 Tools such as Mutual Information, as opposed to measures of correlation or Pearsons coefficient of determination as well as regime analysis and the previously explored power law fitting of data may help provide insight into how one can watch and add value in fat tailed or multi modal situations, by effectively offering to the operaator how to tailor exposure/show what the various regimes may look like.
 
+If there's heuristics such as intermediate shapes of a distribution for a sum to figure out what kind of distribution a variable is being approximately drawn from assuming the soft conditions of independance and identical originating distribution. Then it could be the case that RL or just NN could also devolp better heuristics, or different heuristics and tell us which distributions we might be looking at. Taken with the distributions which we derrive it might be from the regular heuristics and rules Taleb reveals gives us potentially greater insight to what we can say it might not be, and what we worst case distribution we need to protect against. 
+
+This could possibly be done by making the reward, the percentage likelihood that a stream of values observed came from a certain distribution with certain parameters and make the penalty the max confidence the machine had in a distribution being a candidate prior to it being disqualified (<0.1% confidence of it being a candidate). Possibly could use just the penalty but I think the rough idea makes sense.
+
 ## With Repect to Work and Learning
 
 It is not unreasonable to approach any obstacle of life or work as things to be tackled by a process of refined reasearch, with hypothesis, observations, analysis, and what that could possibly tell you about the domain with which you're interacting.
