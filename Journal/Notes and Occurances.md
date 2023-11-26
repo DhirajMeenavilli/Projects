@@ -22,6 +22,8 @@ Hence Taleb advises using the MAD for both stability,and communicability of an i
 
 Infinite variance models based on thing like Cauchy Stable or 2 sided Pareto or Student T with a small tail exponenet can all simmulate fat tailed conditions, although they may all have different shapes, the tail exponent chosen for a Student T, does appear to be pretty robust, so it can occasionaly be useful to see grey swans assuming the data fit reasonably well. This means we can find a reasonable price for the insurance of a situation, as well as how to intelligently take exposure so we don't go bust, perhaps that idea can be trnaslated over to the world of RL or just ML in general.
 
+Tools such as Mutual Information, as opposed to measures of correlation or Pearsons coefficient of determination as well as regime analysis and the previously explored power law fitting of data may help provide insight into how one can watch and add value in fat tailed or multi modal situations, by effectively offering to the operaator how to tailor exposure/show what the various regimes may look like.
+
 ## With Repect to Work and Learning
 
 It is not unreasonable to approach any obstacle of life or work as things to be tackled by a process of refined reasearch, with hypothesis, observations, analysis, and what that could possibly tell you about the domain with which you're interacting.
