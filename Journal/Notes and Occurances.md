@@ -30,6 +30,12 @@ This could possibly be done by making the reward, the percentage likelihood that
 
 Tests such as using the EVT heurstic of sigma(u) which supposes that the difference in probability of a maximum under an unknown distribution should as that maximum goes out further and further towards the finite or infinite right endpoint of the unknown distribution have it's conditional distribution beyond a given value be no different than if the distriution were some Generalised Pareto Distribution. (Though I'm not quite sure how this ties into the theorem about the GEVD, and the idea that the MDA for any power law distribution is the Frechet distribution).
 
+Most of the time for a security or whatever is being analysed it is sufficient to realise what class a given variable likely belongs to, and then proceeding to explore that class for what distribution it may be, and what parameters it may have like tail exponent, location, scale, shape, etc.
+
+Potentially as opposed to using sigmoid, or leaky ReLUs, a use of weighted calls, with different times to expiration to create curvuture may be useful, though it would certainly need to be tested. 
+
+Additionaly by performing a "battery" of tests, we can find not only if a tail is Paretian in distribution but also potential assymetrys and dependences by noting changes one unit removed in time (before and after), and then comparing the number of maxs to a Harmonic Number of how many maxs would be the case given random shuffled data. 
+
 ## With Repect to Work and Learning
 
 It is not unreasonable to approach any obstacle of life or work as things to be tackled by a process of refined reasearch, with hypothesis, observations, analysis, and what that could possibly tell you about the domain with which you're interacting.
