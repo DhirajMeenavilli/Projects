@@ -24,18 +24,53 @@ def get_batch(data, batch_size, block_size): # Should always write all your impo
     x = torch.stack(x_tuple) # Stacks them as rows
     y = torch.stack(y_tuple)
 
+    x,y = x.to(device), y.to(device)
+
     return x,y
 ###----------------------------------------- Classes ------------------------------------------------------------------------------------------
-class bigramLanguageModel(nn.Module):
-  def __init__(self, vocab_size) -> None:
+class Head(nn.Module):
+  # One head of self-attention
+
+  def __init__(self, head_size) -> None:
     super().__init__()
-    
-    self.token_embedding_table = nn.Embedding(vocab_size, vocab_size)
+    self.key = nn.Linear(n_embed, head_size, bias = False)
+    self.query = nn.Linear(n_embed, head_size, bias = False)
+    self.value = nn.Linear(n_embed, head_size, bias = False)
+    self.register_buffer('tril', torch.tril(torch.ones(block_size, block_size)))
+# The self.register allows you to assign it to the module so it can be called.
+
+  def forward(self, x):
+    B,T,C = x.shape[0], x.shape[1], x.shape[2]
+    k = self.key(x)
+    q = self.query(x)
+    weights = q @ k.transpose(-2,-1) * C **(-1/2)
+    weights = weights.masked_fill(self.tril[:T,T:] == 0, float('-inf')) # We go and make sure that only the past is able to be communicated with via the weights
+    weights = F.softmax(weights, dim=1)
+    v = self.value(x)
+    output = weights @ v
+    return output
+
+class bigramLanguageModel(nn.Module): # For the bigram model position doesn't matter but as we go from bigram to ngram to GPT it will.
+  def __init__(self) -> None:
+    super().__init__()
+
+    self.token_embedding_table = nn.Embedding(vocab_size, n_embed) # Because you don't want to emebed the entire vocab size I guess?
     # The embedding table is a table of size vocab size x vocab size in this case 65 x 65
     # nn.embedding is a thin wrapper around the table
-
+    self.position_embedding_table = nn.Embedding(block_size, n_embed)
+    #Because we're not just emebedding the charachters but also their position we need a second embedding table
+    self.self_attention_head = Head(n_embed) # We make the headsize = number of embeddings
+    self.lm_head = nn.Linear(n_embed, vocab_size)
+  
   def forward(self, idx, targets):
-    logits = self.token_embedding_table(idx)
+    token_emb = self.token_embedding_table(idx)
+    position_emb = self.position_embedding_table(torch.arange(T ,device=device))
+    
+    x = token_emb + position_emb
+    x = self.self_attention_head(x)
+    
+    logits = self.lm_head(x) # The nn is coming about
+    
     # When we pass idx here, every interger is going to refer to the table and pluck out the row associated with it's interger value. So 23 takes the 23rd row, etc.
     # PyTorch will then arrange this into (Batch, Time, Channel) tensors. Channel is = vocab size
     # This will then be interperted as logits which is a set of scores for the charachteres stating what is likely next.
@@ -58,6 +93,8 @@ class bigramLanguageModel(nn.Module):
   def generate(self, idx, max_new_tokens):
     # idx is (Batch, Time) array of indicies in the current context window
     for i in range(max_new_tokens):
+      # We have to make sure the index never goes outside the range of the blaock size available so we crop it (?)
+      idx = idx[:, -block_size:]
       # Taking the current indicies and getting the predictions
       logits, loss = self.forward(idx, None) # We ignore the loss, cus we have no ground truth to compare against becasue we are geenrating
       # Focus on last time step, we pluck out the last moment because that's the one predicting what comes next.
@@ -69,6 +106,7 @@ class bigramLanguageModel(nn.Module):
       # Append sampled index to the running sequence and then return
       idx = torch.cat((idx, idx_next), dim = 1) # Batch, Time + 1
     return idx
+
 ###----------------------------------------------------------------- Code --------------------------------------------------------------
 
 # Inputs
@@ -91,17 +129,20 @@ training_size = int(0.9*len(data))
 block_size = 8 # What the context length we want up to is
 batch_size = 32
 learning_rate = 1e-3
-
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+n_embed = 32
+# eval_iters = 200 If you want an average of losses after a certain number of iterations, useful if different layers have different behaviours dependant on the mode it's in
 
 train_data = data[:training_size]
 val_data = data[training_size:]
 
-model = bigramLanguageModel(vocab_size=vocab_size)
+m = bigramLanguageModel()
+model = m.to(device)
 optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate) # For smaller models a bigger learning rate is fine because of less complexity in some sense.
 torch.manual_seed(42)
 
 # Outputs
-
+# torch.no_grad() Useful for validation time.
 for i in range(10000):
   # Sample the data
   xb, yb = get_batch(train_data, batch_size, block_size)
@@ -114,4 +155,4 @@ for i in range(10000):
 
 print(loss.item()) # 2.5 is about as low as it's gonna go and it gets there in about 20000 iterations
 
-print(decode(model.generate(idx=torch.zeros((1,1), dtype=torch.long),max_new_tokens=100)[0].tolist())) # it actually looks kind of like an english sentence now with spacing and even some real words and caps in reasonable places
+print(decode(model.generate(idx=torch.zeros((1,1), dtype=torch.long, device=device),max_new_tokens=100)[0].tolist())) # it actually looks kind of like an english sentence now with spacing and even some real words and caps in reasonable places
