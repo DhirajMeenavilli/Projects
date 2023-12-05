@@ -46,6 +46,8 @@ Also in the same way that OTM options are convex to Std. Dev. as in as the Stand
 
 Given that we take p-values to be generated of a power law meta distribution, the probability of atleast one p-value in a series of expiriments being less than 0.05 is almost 100% even if the truth of the matter is weak or even no evidence against the Null Hypothesis, just due to the stochastic nature of an expiriment. The fixes suggested are looking for p-value < 0.005 or my preffered solution is to report the full distribution of p-values expirienced as the expirirment was done over and over as opposed to just reporting the minimum/statistically significant point p-value, so that it can be understood and fitting a distribution to it we can find the median p-value and MAD etc. to get a better idea of what's going on. Obviously stochasticity of the tail exponent introduuces further complications, but perhaps not a bad first step.
 
+CLT states that your partial sum as Sn = A large enough number, the distribution will come out to being Gaussian. The Law of Large Numbers then says as the CLT kicks in your mean will end up concentrating and concentrating until you get a Dirac stick for Sn = A very large number i.e. low to no variance as n gets vry big. The problem is for power laws it takes a very very large n for those 2 things to kick in, assuming there even is a mean or a finite variance.
+
 ## With Repect to Work and Learning
 
 It is not unreasonable to approach any obstacle of life or work as things to be tackled by a process of refined reasearch, with hypothesis, observations, analysis, and what that could possibly tell you about the domain with which you're interacting.
