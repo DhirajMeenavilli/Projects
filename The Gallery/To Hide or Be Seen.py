@@ -49,3 +49,6 @@ import fastai
 # First thing I made sure of was that Conservative MPS and I hope this is true for the rest of the data, don't wear more blue ties
 # Hopefully there's no trend of liberals wearing red things or wearing less blue or sumin. We'll see though.
 
+# Might start with a desire to learn something like can political leanings be learnt from vision technologys observation of faces alone.
+# And end up with the conclusion Liberal leaning MPs smile more in Canadian political display headshots than conservatives in whenever 
+# the last election was.
