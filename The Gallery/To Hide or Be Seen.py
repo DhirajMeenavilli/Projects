@@ -52,3 +52,6 @@ import fastai
 # Might start with a desire to learn something like can political leanings be learnt from vision technologys observation of faces alone.
 # And end up with the conclusion Liberal leaning MPs smile more in Canadian political display headshots than conservatives in whenever 
 # the last election was.
+
+# From a very quick first foray into it, it seems there is some level of predicitability, with a resnet32 model being able to get to a 
+# 65% accuracy, however the skew is 62% Liberal 38% conservative so that explains that away. 
