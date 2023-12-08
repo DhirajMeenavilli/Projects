@@ -48,6 +48,10 @@ Given that we take p-values to be generated of a power law meta distribution, th
 
 CLT states that your partial sum as Sn = A large enough number, the distribution will come out to being Gaussian. The Law of Large Numbers then says as the CLT kicks in your mean will end up concentrating and concentrating until you get a Dirac stick for Sn = A very large number i.e. low to no variance as n gets vry big. The problem is for power laws it takes a very very large n for those 2 things to kick in, assuming there even is a mean or a finite variance.
 
+There is possibly much to be gained even under fat tails, to making bets with the Kelly criterion, thereby avoiding any chance of risk, as the geometric mean is maximised and greater than 0, and also to the idea of the St. Petersburg resolution of buying insurance on risky instruments, to boost the geometric mean, at the cozt of the arithemetic one which was also emphasised by Spitznagel, and also the notion of volatility harvesting as a way to allow for the use of arithmetic average to be in your favor, given taxes and commisions can be minimised in such a way to allow it to be viable. This allows for better thinking on a portfolio level, under any regime, pbviously however correlation of risks still need to be considered and diversified to whatever extent they can be or countered via insurance, etc.
+
+Additionally ideas of information such as entropy, and the notion of a private wire giving truer odds than is the case being priced on the tote board or in the market alllows for better thinking about the fundamental analysis of a situation, and how best to bet on any given situation, as well as allowing for a more disinterested more distant approach to equity selection.
+
 ## With Repect to Work and Learning
 
 It is not unreasonable to approach any obstacle of life or work as things to be tackled by a process of refined reasearch, with hypothesis, observations, analysis, and what that could possibly tell you about the domain with which you're interacting.
