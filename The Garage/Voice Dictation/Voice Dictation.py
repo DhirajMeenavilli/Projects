@@ -1,2 +1,3 @@
 # Idea is very self-explanatory
 # It's going to be first for my grandpa, then grandma, then maybe I'll open source some of it, and if God willing maybe I can turn the damn thing into a patent then a product then a capitalist metacommentary.
+# I've decided to use a fastai library (a fork of it anyways to start) but I'm realising a big componenet of this will be doing work with the expectation or under the assumption it'll bear no fruit, I might just learn how to sow better.
