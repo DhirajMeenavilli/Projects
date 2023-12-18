@@ -71,3 +71,5 @@ As I get deeper into dedicating myself to actually studying and pursuing intrest
     2. My focus can be very variable depending on the day, and I often find myself in this state where I want to learn yet my brain has no capacity for the focus I need to put up and the lack of stimulation from the thing. The latter is begining to wane somewhat as I become more and more comfortable with things like reading and watching lectures. Yet the first acts as a very hard obstacle although my genuine disintrest in more uninteresting things is acting to help me feel more comfortable. I find it's defenitley a tradeoff. But one which is proggressively more favorable.
 
 I've found additionally, there's a sweet spot to be struck between understanding a concept in full depth and just accepting that it will make sense as the greater picture comes to be, and if it still bothers you once you've gone deep into the dexcursion you can always come back to it.
+
+Also I found additionally, the smallest possible step is that which is repeatable every day.
