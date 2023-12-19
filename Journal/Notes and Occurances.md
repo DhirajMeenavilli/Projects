@@ -52,6 +52,8 @@ There is possibly much to be gained even under fat tails, to making bets with th
 
 Additionally ideas of information such as entropy, and the notion of a private wire giving truer odds than is the case being priced on the tote board or in the market alllows for better thinking about the fundamental analysis of a situation, and how best to bet on any given situation, as well as allowing for a more disinterested more distant approach to equity selection.
 
+I am now convinced of the idea that through thurough witiling down of possibilities is the best way to approach almost any problem. With a disconfirmatory cynical perspective, than with a onfirmatory positivisst perspective.
+
 ## With Repect to Work and Learning
 
 It is not unreasonable to approach any obstacle of life or work as things to be tackled by a process of refined reasearch, with hypothesis, observations, analysis, and what that could possibly tell you about the domain with which you're interacting.
