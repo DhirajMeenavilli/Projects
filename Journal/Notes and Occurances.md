@@ -75,3 +75,7 @@ As I get deeper into dedicating myself to actually studying and pursuing intrest
 I've found additionally, there's a sweet spot to be struck between understanding a concept in full depth and just accepting that it will make sense as the greater picture comes to be, and if it still bothers you once you've gone deep into the dexcursion you can always come back to it.
 
 Also I found additionally, the smallest possible step is that which is repeatable every day.
+
+## With Repect to Teaching and Sharing
+
+When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.
