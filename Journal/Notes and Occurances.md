@@ -78,6 +78,8 @@ Also I found additionally, the smallest possible step is that which is repeatabl
 
 In addition to approaching learning from this more relaxed, yet consistently struggling way and by focusing on taking time to digest and break down ideas in your head, it is not ideas that you learn, but rather tools that you can then use to cut a problem down, analyse the subproblems, solve the subproblems via a method of rigirous disconfirmation, understand their consequences, and put it back together in a comprehensible and usable way for yourself and others.
 
+Deep unthinking relaxation is also profoundly important to not just learning, but to the congealing of oneself with their humanity.
+
 ## With Repect to Teaching and Sharing
 
 When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.
