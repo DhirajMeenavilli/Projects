@@ -57,3 +57,19 @@ plt.show()
 #3. Boxplot: Very useful for both outlier detection and neccessarily for how much information of the Shannon variety / signal a given feature value might represent.
 sns.boxplot(Titanic_Dataset['Fare']) #
 plt.show()
+
+"""
+Xy = X.copy() # This is a code to visualise a kmeans clusterings against some target value to see if there's any clear cluster:target signal.
+Xy["Cluster"] = Xy.Cluster.astype("category")
+Xy["SalePrice"] = y
+sns.relplot(
+    x="value", y="SalePrice", hue="Cluster", col="variable",
+    height=4, aspect=1, facet_kws={'sharex': False}, col_wrap=3,
+    data=Xy.melt(
+        value_vars=features, id_vars=["SalePrice", "Cluster"],
+    ),
+);
+
+# Additionally it should be noted that things like SHAP values and Partial Dependance Plots are also extremely useful for determining the values of features and for granting better insights into disvalidating hypothesis.
+
+"""
