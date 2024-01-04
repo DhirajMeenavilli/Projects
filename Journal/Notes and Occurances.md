@@ -82,7 +82,7 @@ Deep unthinking relaxation is also profoundly important to not just learning, bu
 
 It comes to be that almost all political situations boil down to goals, available paths/branching paths, incentives, and leveraging actions to generate the largest optionality, this comes as the natural other hand to single minded obsession. 
 
-Problem solving effectively boils down to understanding the concepts, principles, and techniques you can apply to a situation, figuring out the structure of the system in which the problem is encased and exploiting said structure to have it be shaped more amenably.
+Problem solving effectively boils down to understanding the concepts, principles, and techniques you can apply to a situation, figuring out the structure of the system in which the problem is encased and exploiting said structure to have it be shaped more amenably. It also comes to how to come up with ideas when you run out, i.e. perturbing the structure, which comes with gathering more tools and where to look for solutions.
 
 ## With Repect to Teaching and Sharing
 
