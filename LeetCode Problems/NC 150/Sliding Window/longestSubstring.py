@@ -1,3 +1,4 @@
+s = "wwekw"
 arr = list(s)
 chars = []
 l = 0
