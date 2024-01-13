@@ -84,6 +84,10 @@ It comes to be that almost all political situations boil down to goals, availabl
 
 Problem solving effectively boils down to understanding the concepts, principles, and techniques you can apply to a situation, figuring out the structure of the system in which the problem is encased and exploiting said structure to have it be shaped more amenably. It also comes to how to come up with ideas when you run out, i.e. perturbing the structure, which comes with gathering more tools and where to look for solutions.
 
+Failure to take things from theory to reality is likely a function of mismatches between the context of theory and the medium to which you are trying to translate that theory, i.e. rhymes to paper, books to excel forecasts, or algorithims to code.
+
 ## With Repect to Teaching and Sharing
 
 When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.
+
+Empathy is also extremely important. As the state and beliefs of an individual will really make a difference to how the conversation should be had.
