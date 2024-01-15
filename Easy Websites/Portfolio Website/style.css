@@ -192,6 +192,9 @@ section {
 
 .section_text_p1{
     text-align: center;
+}
+
+.section_text_p2{    
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
@@ -258,4 +261,56 @@ section {
 
 .btn-container{
     gap: 1rem;
+}
+
+/* About  */
+
+#about{
+    position: relative;
+}
+
+.about_containers{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about_details_container{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about_containers, .about_details_container{
+    display: flex;
+}
+
+/* .about-pic{
+    border-radius: 2rem;
+} The reason I'm not using this is I want a square github commit calander there*/ 
+
+.arrow{
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details_container{
+    padding: 1.5rem;
+    flex:1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.section-container{
+    gap: 4rem;
+    height: 10%;
+}
+
+.section_pic_container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
 }
