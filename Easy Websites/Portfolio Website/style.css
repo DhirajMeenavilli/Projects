@@ -1,0 +1,261 @@
+/* General */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+/* Transition */
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* Desktop Nav */
+
+nav, .nav-link {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-link {
+    gap: 2rem;/*Should probably get rid of hardcoded specs. */
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+    /* So that the decoration blends in */
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    /* So that there's distance */
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+    /* So that the decoration also appears to be shifting color */
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+/* Hamburger Menu */
+
+#hamburger-menu {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span{
+    /* A neat way to make the burger icon */
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 300ms ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+}
+
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child  {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2)  {
+    opacity: 0;
+}
+.hamburger-icon.open span:last-child  {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+/* The previous three are for turning the hamburger to an X */
+/* .hamburger-icon span:first-child{
+    transform: none;
+}
+
+.hamburger-icon span:first-child{
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child{
+    transform: none;
+} Not sure what these are needed for so I'm ommiting for now.*/
+
+/* Sections */
+
+section {
+    /* padding-top: 4vh; */
+    /* height: 96vh; */
+    margin: 0 10rem;
+    /* All the margins and paddings are making it go haywire  */
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* Profile Section */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    /* height: 80vh; */
+}
+
+.section_pic_container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.section_text{
+    align-self: center;
+    text-align: center;
+}
+
+.section_text p {
+    font-weight: 600;
+}
+
+.section_text_p1{
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* Icons */
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* Buttons */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-colour-1, .btn-colour-2 {
+    border: rgb(53,53,53) 0.1rem solid;
+}
+
+.btn-colour-1:hover, .btn-colour-2:hover {
+    cursor: pointer;
+}
+
+.btn-colour-1:hover, .btn-colour-2 {
+    background: rgb(53,53,53);
+    color: white;
+}
+
+.btn-colour-2:hover{
+    background: rgb(0,0,0);
+}
+
+.btn-colour-1{
+    background: none;
+}
+
+.btn-colour-1:hover{
+    border: white 0.1rem solid;
+}
+
+.btn-container{
+    gap: 1rem;
+}
