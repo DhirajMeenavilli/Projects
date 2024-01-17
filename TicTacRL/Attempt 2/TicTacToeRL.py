@@ -28,7 +28,7 @@ class DQN(nn.Module):
         return out
 
 class Player():
-    def __init__(self, gamma=0.99, epsilon=1, epsilon_min=0.01, epsion_decrement=0.0005, batch_size=32, max_mem_size=100000):
+    def __init__(self, gamma=0.99, epsilon=1, epsilon_min=0.01, epsion_decrement=0.0005, batch_size=32, max_mem_size=2):
         self.gamma = gamma
         self.epsilon = epsilon
         self.epsilon_min = epsilon_min
@@ -46,7 +46,7 @@ class Player():
         self.new_state_memory = np.zeros((self.max_mem_size, 9), dtype=np.float32)
         self.action_memory = np.zeros(self.max_mem_size, dtype=np.int32)
         self.reward_memory = np.zeros(self.max_mem_size, dtype=np.float32)
-        self.terminal_memory = np.zeros(self.max_mem_size, dtype=np.bool)
+        self.terminal_memory = np.zeros(self.max_mem_size, dtype=np.bool_)
     
     def store_transition(self, state, new_state, action, reward, terminal):
         index = self.memory_counter % self.max_mem_size
@@ -55,7 +55,11 @@ class Player():
         self.reward_memory[index] = reward
         self.action_memory[index] = action
         self.terminal_memory[index] = terminal
-
+        print(self.state_memory)
+        print(self.new_state_memory)
+        print(self.action_memory)
+        print(self.reward_memory)
+        print(self.terminal_memory)
         self.memory_counter += 1
 
     def choose_action(self, state):
@@ -73,4 +77,9 @@ torch.manual_seed(0)
 game = Game()
 # X_agent = DQN() # Pure greedy single DQN, no menmory buffer/expierence replay, no policy and target network, and no backprop to update weights
 # O_agent = DQN()
-X_player = Player()
+# X_player = Player()
+# action = X_player.choose_action(game.board)
+# state = game.board.detach().clone()
+# game.play_move(1,action)
+# new_state = game.board.detach().clone()
+# X_player.store_transition(state,new_state,action,0,0)
