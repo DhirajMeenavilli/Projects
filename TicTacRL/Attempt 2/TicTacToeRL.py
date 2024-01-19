@@ -7,9 +7,36 @@ import random
 class Game():
     def __init__(self) -> None:
         self.board = torch.FloatTensor([0,0,0,0,0,0,0,0,0])
+        
+    def check_winner(self,mark):
+        return((self.board[0]==mark and self.board[1]== mark and self.board[2]==mark )or #for row1 
+
+                (self.board[3]==mark and self.board[4]==mark and self.board[5]==mark )or #for row2
+
+                (self.board[6]==mark and self.board[7]==mark and self.board[8]==mark )or #for row3
+
+                (self.board[0]==mark and self.board[3]==mark and self.board[6]== mark )or #for Colm1 
+
+                (self.board[1]==mark and self.board[4]==mark and self.board[7]==mark )or #for Colm 2
+
+                (self.board[2]==mark and self.board[5]==mark and self.board[8]==mark )or #for colm 3
+
+                (self.board[0]==mark and self.board[4]==mark and self.board[8]==mark )or #daignole 1
+
+                (self.board[2]==mark and self.board[4]==mark and self.board[6]==mark )) #daignole 2
     
     def play_move(self, symbol, position):
-        self.board[position] = symbol
+        if self.board[position] == 0:
+
+            self.board[position] = symbol
+
+            if self.check_winner(1):
+                return self.board, 0 # I'm not using the terminal memory hence the terminal state I'm jsut hard coding a value of 0 let's see what happens
+            
+            return self.board, -1
+
+        else:
+            return self.board, -1
 
 # Define the neural network model
 class DQN(nn.Module):
@@ -101,7 +128,31 @@ class Player():
 
 torch.manual_seed(0)
 
-game = Game()
+player = Player()
+
+for i in range(1000):
+    
+    game = Game()
+    active = True
+    score = 0
+
+    while active:
+        state = game.board
+        action = player.choose_action(state)
+        new_state, reward = game.play_move(1, action)
+        
+        if reward == 0:
+            active = False
+        
+        score += reward
+        player.store_transition(state=state, new_state=new_state, action=action, reward=reward, terminal=False)
+        player.learn()
+    
+    if i % 100 == 0:
+        print(game.board)
+        print(score)
+
+
 # X_agent = DQN() # Pure greedy single DQN, no menmory buffer/expierence replay, no policy and target network, and no backprop to update weights
 # O_agent = DQN()
 # X_player = Player()
