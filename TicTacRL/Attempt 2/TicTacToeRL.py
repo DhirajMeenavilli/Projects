@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import numpy as np
+import copy
 import random
 
 class Game():
@@ -67,7 +68,7 @@ class Player():
         self.memory_counter = 0
 
         self.policy_network = DQN()
-        self.target_network = DQN()
+        # self.target_network = DQN()
         
         self.state_memory = np.zeros((self.max_mem_size, 9), dtype=np.float32)        
         self.new_state_memory = np.zeros((self.max_mem_size, 9), dtype=np.float32)
@@ -125,6 +126,10 @@ class Player():
 
             if self.epsilon > self.epsilon_min:
                 self.epsilon = self.epsilon - self.epsilon_decrement
+    
+    # def update_policy(self):
+    #     self.target_network = copy.deepcopy(self.policy_network)
+
 
 torch.manual_seed(0)
 
@@ -135,6 +140,9 @@ for i in range(1000):
     game = Game()
     active = True
     score = 0
+    
+    # if i%20 == 0:
+    #     player.update_policy()
 
     while active:
         state = game.board
@@ -147,7 +155,7 @@ for i in range(1000):
         score += reward
         player.store_transition(state=state, new_state=new_state, action=action, reward=reward, terminal=False)
         player.learn()
-    
+
     if i % 100 == 0:
         print(game.board)
         print(score)
