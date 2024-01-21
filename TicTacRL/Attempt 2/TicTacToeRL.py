@@ -32,12 +32,20 @@ class Game():
             self.board[position] = symbol
 
             if self.check_winner(1):
-                return self.board, 0 # I'm not using the terminal memory hence the terminal state I'm jsut hard coding a value of 0 let's see what happens
+                return self.board, 0, True # I'm not using the terminal memory hence the terminal state I'm jsut hard coding a value of 0 let's see what happens
             
-            return self.board, -1
+            return self.board, -1, True
 
         else:
-            return self.board, -1
+            return self.board, -1, False
+
+    # def draw_board(self):
+
+    #     print(str(self.board[0]) + "|" + str(self.board[1]) + "|" + str(self.board[2]))
+    #     print("________")
+    #     print(str(self.board[3]) + "|" + str(self.board[4]) + "|" + str(self.board[5]))
+    #     print("________")
+    #     print(str(self.board[6]) + "|" + str(self.board[7]) + "|" + str(self.board[8]))
 
 # Define the neural network model
 class DQN(nn.Module):
@@ -134,6 +142,7 @@ class Player():
 torch.manual_seed(0)
 
 player = Player()
+player2 = Player()
 
 for i in range(1000):
     
@@ -143,18 +152,49 @@ for i in range(1000):
     
     # if i%20 == 0:
     #     player.update_policy()
+    moves = 0
 
     while active:
         state = game.board
         action = player.choose_action(state)
-        new_state, reward = game.play_move(1, action)
-        
-        if reward == 0:
-            active = False
-        
-        score += reward
+        new_state, reward, free = game.play_move(1, action)
         player.store_transition(state=state, new_state=new_state, action=action, reward=reward, terminal=False)
         player.learn()
+
+        while not free:
+            action = player.choose_action(state)
+            new_state, reward, free = game.play_move(1, action)
+            # print("Free",free)
+            player.store_transition(state=state, new_state=new_state, action=action, reward=reward, terminal=False)
+            player.learn()
+        
+        score += reward
+
+        moves += 1
+
+        if reward == 0 or moves == 9:
+            active = False
+            continue
+
+        state = game.board
+        action = player2.choose_action(state)
+        new_state, reward, free = game.play_move(2, action)
+        player2.store_transition(state=state, new_state=new_state, action=action, reward=reward, terminal=False)
+        player2.learn()
+
+        while not free:
+            action = player2.choose_action(state)
+            new_state, reward, free = game.play_move(2, action)
+            # print(free)
+            player2.store_transition(state=state, new_state=new_state, action=action, reward=reward, terminal=False)
+            player2.learn()
+        
+        score += reward
+        moves += 1
+
+        if reward == 0 or moves == 9:
+            active = False
+            continue
 
     if i % 100 == 0:
         print(game.board)
