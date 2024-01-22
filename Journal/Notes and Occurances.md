@@ -86,6 +86,8 @@ Problem solving effectively boils down to understanding the concepts, principles
 
 Failure to take things from theory to reality is likely a function of mismatches between the context of theory and the medium to which you are trying to translate that theory, i.e. rhymes to paper, books to excel forecasts, or algorithims to code.
 
+Truly restong is a critical skill, yet one entirely ununderstood by myself, and likely everyone else who works more than they think.
+
 ## With Repect to Teaching and Sharing
 
 When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.
