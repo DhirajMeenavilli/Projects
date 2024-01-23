@@ -86,7 +86,9 @@ Problem solving effectively boils down to understanding the concepts, principles
 
 Failure to take things from theory to reality is likely a function of mismatches between the context of theory and the medium to which you are trying to translate that theory, i.e. rhymes to paper, books to excel forecasts, or algorithims to code.
 
-Truly restong is a critical skill, yet one entirely ununderstood by myself, and likely everyone else who works more than they think.
+Truly resting is a critical skill, yet one entirely ununderstood by myself, and likely everyone else who works more than they think.
+
+It is certainly curious that rest requires a slowness and abatement which the ideal of consistency cannot permit. I wonder if those things thus become related as in those who can fall back and take a moment can then speed up and get ahead, akin to the ideas in the Art of War.
 
 ## With Repect to Teaching and Sharing
 
