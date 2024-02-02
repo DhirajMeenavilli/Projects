@@ -97,3 +97,5 @@ When you have people of all different cultureal contexts, domain knowledge, ince
 Empathy is also extremely important. As the state and beliefs of an individual will really make a difference to how the conversation should be had.
 
 No matter how many successes you have, you will always have failures, and they will almost certainly loom larger than any win can make up for however, the key to it is to keep going keep moving, and keep trying. Because as long as you are not defeated, you are not defined by your losses.
+
+Deep traumas or even misalligned feelings relating to things like work, and research etc. are one of the key hurdles to enjoying life to the fullest, because meaningful work is one of those things that you can not have for a long time, but once you get your life becomes much more satisfying and well paced.
