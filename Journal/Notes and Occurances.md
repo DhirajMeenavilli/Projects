@@ -90,6 +90,8 @@ Truly resting is a critical skill, yet one entirely ununderstood by myself, and 
 
 It is certainly curious that rest requires a slowness and abatement which the ideal of consistency cannot permit. I wonder if those things thus become related as in those who can fall back and take a moment can then speed up and get ahead, akin to the ideas in the Art of War.
 
+The balance in order to achieve competency and the volatility that is correlated with progress have to be finely balanced lest one become complacent or unstable.
+
 ## With Repect to Teaching and Sharing
 
 When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.
