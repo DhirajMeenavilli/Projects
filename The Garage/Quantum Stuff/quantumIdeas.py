@@ -1,0 +1,1 @@
+# The start of something where we run through ideas with creating simmulations/visulations which help explain quantum phenonmon more easily.
