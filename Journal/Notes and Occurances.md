@@ -92,6 +92,8 @@ It is certainly curious that rest requires a slowness and abatement which the id
 
 The balance in order to achieve competency and the volatility that is correlated with progress have to be finely balanced lest one become complacent or unstable.
 
+I also seem to get very wrapped up in my own thoughts and context to the point where it becomes indiscernable from the have to's of my day like breathing and eating. However unlearning that, as well as how to commit tentatively such that I can reallign as my goals change will be a massive boon.
+
 ## With Repect to Teaching and Sharing
 
 When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.
