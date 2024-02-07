@@ -103,3 +103,7 @@ Empathy is also extremely important. As the state and beliefs of an individual w
 No matter how many successes you have, you will always have failures, and they will almost certainly loom larger than any win can make up for however, the key to it is to keep going keep moving, and keep trying. Because as long as you are not defeated, you are not defined by your losses.
 
 Deep traumas or even misalligned feelings relating to things like work, and research etc. are one of the key hurdles to enjoying life to the fullest, because meaningful work is one of those things that you can not have for a long time, but once you get your life becomes much more satisfying and well paced.
+
+## With Repect to Greatness
+
+Being considered great is a function of the historical process and the human memory. Both of which are outside the realm of your control, geniuses are forgotten and fools are immortalised. One can only foxus on maximising their chances at greatness by truly being great, which means one can only maximize their chances by doing the work and pushing oneself without breaking.
