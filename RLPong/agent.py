@@ -6,14 +6,16 @@ import numpy as np
 class DQN(nn.Module):
     def __init__(self):
         super(DQN, self).__init__()
-        self.model = nn.Sequential(nn.Linear(6, 256), #Paddle 1 y position, Paddle 2 y position, ball x position, ball y position, ball x velocity, ball y velocity
+        self.model = nn.Sequential(nn.Linear(5, 256), #Paddle 2 y position, ball x position, ball y position, ball x velocity, ball y velocity
                                    nn.ReLU(),
-                                   nn.Linear(256, 256),
+                                   nn.Linear(256, 512),
                                    nn.ReLU(),
-                                   nn.Linear(256, 1024),
+                                   nn.Linear(512, 512),
+                                   nn.ReLU(),
+                                   nn.Linear(512, 1024),
                                    nn.ReLU(),
                                    nn.Linear(1024, 3)) # Pressing up, down, or none.
-        self.optimizer = optim.Adam(self.parameters(), lr=0.01)
+        self.optimizer = optim.Adam(self.parameters(), lr=0.05)
         self.loss = nn.MSELoss() # Because a Q-Network is effectively trying to minimize the loss between the predicted Q-values and actual Q-values according to the policy network.
 
     def forward(self, x): # Backprop is automatically handled by the PyTorch library.
@@ -21,7 +23,7 @@ class DQN(nn.Module):
         return out
 
 class Player():
-    def __init__(self, gamma=0.75, epsilon=1, epsilon_min=0.01, epsion_decrement=0.0000025, batch_size=32, max_mem_size=50000000):
+    def __init__(self, gamma=0.75, epsilon=1, epsilon_min=0.01, epsion_decrement=0.00005, batch_size=32, max_mem_size=50000000):
         self.gamma = gamma
         self.epsilon = epsilon
         self.epsilon_min = epsilon_min
@@ -33,10 +35,10 @@ class Player():
         self.memory_counter = 0
 
         self.policy_network = DQN()
-        # self.target_network = DQN()
+        self.target_network = DQN()
         
-        self.state_memory = np.zeros((self.max_mem_size, 6), dtype=np.float32)        
-        self.new_state_memory = np.zeros((self.max_mem_size, 6), dtype=np.float32)
+        self.state_memory = np.zeros((self.max_mem_size, 5), dtype=np.float32)        
+        self.new_state_memory = np.zeros((self.max_mem_size, 5), dtype=np.float32)
         self.action_memory = np.zeros(self.max_mem_size, dtype=np.int32)
         self.reward_memory = np.zeros(self.max_mem_size, dtype=np.float32)
     
@@ -52,7 +54,7 @@ class Player():
 
     def choose_action(self, state):
         if np.random.random() > self.epsilon: #np.random.random returns a value between [0.0, 1.0)
-            actions = self.policy_network.forward(state)
+            actions = self.target_network.forward(state)
             greedy_action = torch.argmax(actions).item() # Just because torch.argmax returns the value and index
             return greedy_action
         
@@ -84,6 +86,9 @@ class Player():
             loss = self.policy_network.loss(q_target, q_of_state)
             loss.backward()
             self.policy_network.optimizer.step()
+
+            if self.memory_counter % 120 == 0:
+                self.target_network.load_state_dict(self.policy_network.state_dict())
 
             if self.epsilon > self.epsilon_min:
                 self.epsilon = self.epsilon - self.epsilon_decrement
