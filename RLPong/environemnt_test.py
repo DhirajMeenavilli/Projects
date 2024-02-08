@@ -16,11 +16,11 @@ def main():
     pygame.display.set_mode((500, 400))
     pygame.display.set_caption('Pong')
     w_surface = pygame.display.get_surface()
-    for i in range(100):
+    for i in range(10):
         game = Game(w_surface)
         game.play(score,score2,RLagent)
     pygame.quit()
-    torch.save(RLagent.state_dict(), "model_weights.pt")
+    torch.save(RLagent.policy_network.state_dict(), "model_weights.pt")
 
 # User-defined classes
 
@@ -46,47 +46,47 @@ class Game:
         #self.max_frames = 150
         #self.frame_counter = 0
 
-    def play(self,score,score2,RLagent):
+    def play(self,score,score2,RLagent,cumReward=0):
         # Play the game until the player presses the close box.
         # - self is the Game that should be continued or not.
         while not self.close_clicked:  # until player clicks close box
             # play frame
             self.handle_events()
             pressedKeys = pygame.key.get_pressed()
+            agent_hit = False
             if interact(self.contact_paddle_right,self.small_dot):
                 if self.small_dot.velocity[0] > 0:
+                    agent_hit = True
                     self.small_dot.hit()
-
-            agent_hit = False
             
             if interact(self.contact_paddle_left,self.small_dot):
                 if self.small_dot.velocity[0] < 0:
-                    agent_hit = True
                     self.small_dot.hit()
 
             score,score2 = self.small_dot.ScoreUp(score,score2)
 
             if score == 11 or score2 == 11:
-                print(score, score2)
+                print(score, score2, cumReward)
                 self.close_clicked = True
 
             self.draw(score,score2)
 
             if self.continue_game:
                 
-                state = torch.Tensor([self.left_paddle.y, self.right_paddle.y, self.small_dot.center[0], self.small_dot.center[1],self.small_dot.velocity[0], self.small_dot.velocity[1]])
+                state = torch.Tensor([self.right_paddle.y, self.small_dot.center[0], self.small_dot.center[1],self.small_dot.velocity[0], self.small_dot.velocity[1]])
                 action = RLagent.choose_action(state)
                 
                 self.update(pressedKeys, action)
 
-                new_state = torch.tensor([self.left_paddle.y, self.right_paddle.y, self.small_dot.center[0], self.small_dot.center[1],self.small_dot.velocity[0], self.small_dot.center[1]])
+                new_state = torch.tensor([self.right_paddle.y, self.small_dot.center[0], self.small_dot.center[1],self.small_dot.velocity[0], self.small_dot.center[1]])
                 
                 if agent_hit == False:
-                    reward = abs(self.left_paddle.y - self.small_dot.center[1]) * -1
-                
+                    reward = abs((self.left_paddle.pos[1] + self.left_paddle.dim[0])//2 - self.small_dot.center[1]) * -1
                 else:
-                    reward = 100
+                    reward = 10
+                
                 # print(reward)
+                cumReward += reward
                 RLagent.store_transition(state, new_state, action, reward)
                 #self.decide_continue()
                 RLagent.learn()
