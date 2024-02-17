@@ -94,6 +94,16 @@ The balance in order to achieve competency and the volatility that is correlated
 
 I also seem to get very wrapped up in my own thoughts and context to the point where it becomes indiscernable from the have to's of my day like breathing and eating. However unlearning that, as well as how to commit tentatively such that I can reallign as my goals change will be a massive boon.
 
+With respect to making things you just go layer by layer like a painter, and as you layer better and better you get closer and closer to making the beautiful art you wanted to make even if it's radically different from the intial vision. Also remember you go from:
+
+A -------> A
+↑          |
+|          |
+|          ↓
+S -------> S
+
+Where S stands for situation and A for abstraction
+
 ## With Repect to Teaching and Sharing
 
 When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.
