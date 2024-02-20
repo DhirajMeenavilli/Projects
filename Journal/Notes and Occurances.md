@@ -1,6 +1,6 @@
 # Thoughts and Occurances
 
-## With Respect to the Consequences of Fat Tails in Statistical Consequences
+## With Respect to the Consequences of Fat Tails in Statistical Statements
 
 It may be that the very infrastructure on which we model may be wrong, and that far too many normality and modelability assumptions are made, and this may present a crack that has yet to be discovered, and requires only such a tail event to occur for it to blow up on us. Though it is always possible that rather everything is fine.
 
@@ -103,6 +103,8 @@ A -------> A
 S -------> S
 
 Where S stands for situation and A for abstraction
+
+All science effectively boils down to discovery and development, see a problem which intrests you for some personal reason, popularity, money, artistic expression, equalisation, etc. etc. and then discover abstractions which allow for an acceptable amount of lossiness in the abstracted state, then devolp techniques for that state which leverage the paarticularities of the abstraction and then recovert in as lossless a way as possible and then if desired refine and do it over and over again until satisfied.
 
 ## With Repect to Teaching and Sharing
 
