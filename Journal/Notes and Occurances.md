@@ -104,8 +104,6 @@ S -------> S
 
 Where S stands for situation and A for abstraction
 
-All science effectively boils down to discovery and development, see a problem which intrests you for some personal reason, popularity, money, artistic expression, equalisation, etc. etc. and then discover abstractions which allow for an acceptable amount of lossiness in the abstracted state, then devolp techniques for that state which leverage the paarticularities of the abstraction and then recovert in as lossless a way as possible and then if desired refine and do it over and over again until satisfied.
-
 ## With Repect to Teaching and Sharing
 
 When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.
@@ -133,3 +131,13 @@ One has to understand where if their current potential is maintained how great t
 Science is much like all of expirience itself a very personal pursuit. Used to address the issues and difficulties, and make real the dreams of an individual, therefore in addition to doing it yourself, supporting those most marginalised to do their science their way is the best things we can do to promote the dream. To make as many scientists as possible, not just data crunchers but creatives and artistic types to become scientifically savvy.
 
 I think the commonality which I find to be most intense among all the people I consider truly great is the dedication to the fundamentals to ignore all the noise and distraction of approval, and results. To focus single mindedly and obsessively on the fundamentals of the entity to which you are applying your process of deconstruction and solution to and the process of deconstruction and solution itself.
+
+The second is having great people around themselves, which I suppose now in the internet age is a lot easier, and there's a lot more great people with which one can surround themselves.
+
+The third is working on cool and great things, which also is easier to find, and more to do now in the age of instant communication, and centeralised knowledge stores.
+
+## With respect to Science
+
+All science effectively boils down to discovery and development, see a problem which intrests you for some personal reason, popularity, money, artistic expression, equalisation, etc. etc. and then discover abstractions which allow for an acceptable amount of lossiness in the abstracted state, then devolp techniques for that state which leverage the paarticularities of the abstraction and then recovert in as lossless a way as possible and then if desired refine and do it over and over again until satisfied.
+
+Science in my opinion is not even neccessarily the understanding of why something works, it is simply the finding of repetable behaviour, if you can find behaviour which determinstically, probablistically, or randomly repeats in exactly the same way. That knowledge can then be documented, and digested to refine how it's leveraged.
