@@ -141,3 +141,5 @@ The third is working on cool and great things, which also is easier to find, and
 All science effectively boils down to discovery and development, see a problem which intrests you for some personal reason, popularity, money, artistic expression, equalisation, etc. etc. and then discover abstractions which allow for an acceptable amount of lossiness in the abstracted state, then devolp techniques for that state which leverage the paarticularities of the abstraction and then recovert in as lossless a way as possible and then if desired refine and do it over and over again until satisfied.
 
 Science in my opinion is not even neccessarily the understanding of why something works, it is simply the finding of repetable behaviour, if you can find behaviour which determinstically, probablistically, or randomly repeats in exactly the same way. That knowledge can then be documented, and digested to refine how it's leveraged.
+
+Science is also the great bastardizer of our myths showing us what is and most often what isn't the case if we're just willing to see through repeated trial and expiriment but in doing so also shows us the true depth and richness of life.
