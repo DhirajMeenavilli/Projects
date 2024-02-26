@@ -114,6 +114,8 @@ No matter how many successes you have, you will always have failures, and they w
 
 Deep traumas or even misalligned feelings relating to things like work, and research etc. are one of the key hurdles to enjoying life to the fullest, because meaningful work is one of those things that you can not have for a long time, but once you get your life becomes much more satisfying and well paced.
 
+You do become at some point the person someone looks to guidance be ready for the responsibility by making as many mistakes as possible without doing anything obviously dumb.
+
 ## With Repect to Greatness
 
 Being considered great is a function of the historical process and the human memory. Both of which are outside the realm of your control, geniuses are forgotten and fools are immortalised. One can only foxus on maximising their chances at greatness by truly being great, which means one can only maximize their chances by doing the work and pushing oneself without breaking.
@@ -143,3 +145,5 @@ All science effectively boils down to discovery and development, see a problem w
 Science in my opinion is not even neccessarily the understanding of why something works, it is simply the finding of repetable behaviour, if you can find behaviour which determinstically, probablistically, or randomly repeats in exactly the same way. That knowledge can then be documented, and digested to refine how it's leveraged.
 
 Science is also the great bastardizer of our myths showing us what is and most often what isn't the case if we're just willing to see through repeated trial and expiriment but in doing so also shows us the true depth and richness of life.
+
+People used to have math duels and math partially to one up each other and solve strange occurances of logical consequences and occassionally model with them. Weird world, weirder times without much incentive to keep secrets of mathematics.
