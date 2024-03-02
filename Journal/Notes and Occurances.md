@@ -1,4 +1,7 @@
 # Thoughts and Occurances
+## General Thoughts
+
+Humans as a species really are much like a single child alone in space it seems, but that means we too are maturing, realising we are not perhaps the center of the story, but rather just another component and part of the universe that there are things we in fact don't and maybe will never know and that we too can die. It's interesting to note some parralel between the growth of a human child from gestation through maturity, and our species as a whole.
 
 ## With Respect to the Consequences of Fat Tails in Statistical Statements
 
@@ -16,7 +19,7 @@ Watching for large deviations within a collection of data i.e. outliers of some 
 
 However the solution cannot be to just simply do nothing, even for us as people we have to learn to take appropriately hedged bets meaning thurough understandings of risk, which itself may be something that might be difficult to analyse from a statistical perspective i.e with use of past data, though it may not be. This may be one of the interesting ideas to investigate.
 
-A point about Standard Deviation and beyond, for any 2 vectors assuming their L1/mean is the same if the dispersion is wider for one than another, say [1,1] and [2/3,4/3] the l2/STD is going to be larger, and the difference will increase explosively the larger an l norm you take. 
+A point about Standard Deviation and beyond, for any 2 vectors assuming their L1/mean is the same if the dispersion is wider for one than another, say [1,1] and [2/3,4/3] the l2/STD is going to be larger, and the difference will increase explosively the larger an l norm you take. w
 
 Hence Taleb advises using the MAD for both stability,and communicability of an idea of average deviation, though even still you can't make much of a prediction with MAD, it's just more useful to describe what it ddescribes. So I don't know how we would solve the quandry of what action/exposure to take for an RL prgram, except for that it must be a hedged one in potentially fat tailed situations. 
 
