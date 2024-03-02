@@ -107,6 +107,14 @@ S -------> S
 
 Where S stands for situation and A for abstraction
 
+Learning appears best done in the order vocab, grammar, and historical developments with repect to whatever field is being dealt with. Vocab being the terms, grammar being how those terms are then used in various contexts and what they do to the end result of a statement and then historical context being how others in that field developed the vocabulary used, contending ideas thrown out, etc.
+
+There seems to me 3 points to learning what I'll call, Engineering, Science, and Construction/Bridging. Engineering is devolped by creating things via exploitations of the underlying structure, why those exploits may exist, or what fundamentally the problem being solved is is kind of unimportant only a strong comprehension of the technology is required, like doing LEGOs. Science doesn't care about solving any problem it's particular intrest is what is the structure and what/why are the exploits, it seeks a deep comprehension such that the object or phenomena of intrest can most aptly be mapped and modeled. Finally, neither the technology nor the structure is of any intrest to the Builder, only the problem, how to decompose the problem, and how to build the solution by putting things together in any permutation which works.
+
+This can be seen in atleast the 2 fields of CS and Investing, with respect to the Engineer one would find intrest in the specific structure and working of Docker, AWS, puts, futures, etc. Why they work that way is unimportant only that they do and they do so smoothly. The Scientist in each of these domains is then rather intrested, what makes a good model of the problem to be solved, what are the algorithims and heuristics which could effectively be leveraged if someone wanted to solve some situation, for ex. in CS it's like what way should a factory be represented on a machine, what mathematical attributes describe it, and in finance it's like how should a companys value be discerned, what tricks can we use to convert various features such as EBITDA or Current Assets - Total Debt to tangible understandings of the value/risk profile of an oppurtunity. Finally the Constructor doesn't care about what is the exact way Docker or AWS or a put or a future works or about how do we model this, how do we evaluate this, they have a task, and they create a solution with the tools available to them wether it's ugly or not from a smoothness of running or theoretical perspective is entirely not their concern.
+
+
+
 ## With Repect to Teaching and Sharing
 
 When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.
