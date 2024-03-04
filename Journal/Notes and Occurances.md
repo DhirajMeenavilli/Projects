@@ -134,6 +134,8 @@ No matter how much or how little you get done, life is well lived, given that yo
 
 Additionally that which you do more days then not, becomes that at which you are better than most, and becomes what you are more than most.
 
+## With Respect to Marketplaces
+
 ## With Repect to Greatness
 
 Being considered great is a function of the historical process and the human memory. Both of which are outside the realm of your control, geniuses are forgotten and fools are immortalised. One can only foxus on maximising their chances at greatness by truly being great, which means one can only maximize their chances by doing the work and pushing oneself without breaking.
