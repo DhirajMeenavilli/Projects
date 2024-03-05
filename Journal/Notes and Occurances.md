@@ -134,6 +134,8 @@ No matter how much or how little you get done, life is well lived, given that yo
 
 Additionally that which you do more days then not, becomes that at which you are better than most, and becomes what you are more than most.
 
+A perfect lecture would strike the balance between concise, conversational, and information dense. It would likely be the result of shaping the audiences environment to ask certain questions, answered to compliment and pass information into their mind such that they can more easily synthesise the statements being told to them.
+
 ## With Respect to Marketplaces
 
 ## With Repect to Greatness
