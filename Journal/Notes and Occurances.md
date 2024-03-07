@@ -160,6 +160,8 @@ The second is having great people around themselves, which I suppose now in the 
 
 The third is working on cool and great things, which also is easier to find, and more to do now in the age of instant communication, and centeralised knowledge stores.
 
+The attempt at a problem without the desired results is not failure, rather it is a step in the corrosion of a mountain.
+
 ## With respect to Science
 
 All science effectively boils down to discovery and development, see a problem which intrests you for some personal reason, popularity, money, artistic expression, equalisation, etc. etc. and then discover abstractions which allow for an acceptable amount of lossiness in the abstracted state, then devolp techniques for that state which leverage the paarticularities of the abstraction and then recovert in as lossless a way as possible and then if desired refine and do it over and over again until satisfied.
