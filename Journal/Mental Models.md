@@ -95,3 +95,5 @@ Private Definitions: All terms and ideas had to originate from someone, thus the
 Master Studies: Look to people one chapter to whole libraries ahead of you and try to recreate a particular thing that you've noticed they do, then play with it by doing at least 3 versions. This way you can get a good idea of why they did what they did and what works what doesn't it's also a safe way to build intuition. Then once you have mastery up to a certain point keep tackling the guts and rearranging things until you've mastered it, at which point look to other domains to draw inspiration from. (Art)
 
 Divergence to Convergance: Start with many, select one which looks intersting, abandon if it gets to be nowhere and go back and dive into another. (Art)
+
+Follow Expiriment: Never have full conclusion, only unless logic dictate something is not the case, allow expiriment and observation to dictate the direction and weight of beliefs. (Philisopohy)
