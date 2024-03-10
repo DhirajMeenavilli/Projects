@@ -118,6 +118,8 @@ There is at every level dimes on the ground, easy money to be picked up, be it t
 I have a tendancy, and I think more broadly people in general have a tendancy to get too into picking up what appear to be gold nuggets 
 in the form of the latest or emerging thing. While certainly, techniques, technology, etc. are fascinating to learn about for their own sake, often as far as the real world is concerned only about 1-5% of the things ever thought or devolped will be left standing after 5-20 years, so it becomes more fruitful to both gleam all the nuggets still standing in every field, and to work backwards from problem to solution rather than solution to problem. The additionally difficult thing is that we can never particularily know what will wash out, and what will stay and become one of the supreme workhorses of that fields toolkit.
 
+No one really knows what they're doing, it's really not that deep for most people.
+
 ## With Repect to Teaching and Sharing
 
 When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.
