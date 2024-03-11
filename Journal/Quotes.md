@@ -9,3 +9,5 @@
 "ఎవరో కలలు కన్నారు మరియు నిర్మించారు, ప్రతిదీ అలా వచ్చింది, కాబట్టి మనం వాటి గురించి ఆలోచిస్తూ వాటిని తయారు చేసుకోవాలి." - Chode Sriramamurthy, 2024
 
 "There are no smart people, but some people are just more driven and have a bigger imagination than others." - Richard Feynman, 19XX
+
+"It is not death that a (one) should fear, but rather never beginning to live." - Marcus Aerelius, 1XX
