@@ -97,3 +97,5 @@ Master Studies: Look to people one chapter to whole libraries ahead of you and t
 Divergence to Convergance: Start with many, select one which looks intersting, abandon if it gets to be nowhere and go back and dive into another. (Art)
 
 Follow Expiriment: Never have full conclusion, only unless logic dictate something is not the case, allow expiriment and observation to dictate the direction and weight of beliefs. (Philisopohy)
+
+Training: As you repeat a behaviour or skill the concious effort required to do it becomes lower and lower over time. (Psychology)
