@@ -98,4 +98,4 @@ Divergence to Convergance: Start with many, select one which looks intersting, a
 
 Follow Expiriment: Never have full conclusion, only unless logic dictate something is not the case, allow expiriment and observation to dictate the direction and weight of beliefs. (Philisopohy)
 
-Training: As you repeat a behaviour or skill the concious effort required to do it becomes lower and lower over time. (Psychology)
+Training: As you repeat a behaviour or skill the concious effort required to do it becomes lower and lower over time, this is doubly so if the way you encode the primiatives a grander strutcuture is well done. (Psychology)

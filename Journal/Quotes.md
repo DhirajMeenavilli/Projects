@@ -11,3 +11,5 @@
 "There are no smart people, but some people are just more driven and have a bigger imagination than others." - Richard Feynman, 19XX
 
 "It is not death that a (one) should fear, but rather never beginning to live." - Marcus Aerelius, 1XX
+
+"You get what you reward." - Charlie Munger, 19XX
