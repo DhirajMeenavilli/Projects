@@ -99,3 +99,5 @@ Divergence to Convergance: Start with many, select one which looks intersting, a
 Follow Expiriment: Never have full conclusion, only unless logic dictate something is not the case, allow expiriment and observation to dictate the direction and weight of beliefs. (Philisopohy)
 
 Training: As you repeat a behaviour or skill the concious effort required to do it becomes lower and lower over time, this is doubly so if the way you encode the primiatives a grander strutcuture is well done. (Psychology)
+
+Mapping: When you take a point in one vector space and then transform it via conditions, roatations, translations, or calculations to some new point in the same vector space or to a new vector space, you may have a general mapping which allows the solution of a certain class of issues. (Mathmeatics)
