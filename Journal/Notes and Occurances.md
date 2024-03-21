@@ -148,7 +148,11 @@ Additionally that which you do more days then not, becomes that at which you are
 
 A perfect lecture would strike the balance between concise, conversational, and information dense. It would likely be the result of shaping the audiences environment to ask certain questions, answered to compliment and pass information into their mind such that they can more easily synthesise the statements being told to them.
 
-## With Respect to Marketplaces
+## With Respect to Finance
+
+Perhaps because the question of how much should a lender charge a borrower in isolation is an almost to impossible question to answe, we swapped it out instead for the question of what rate can you charge to maximize profit for the firm? 
+
+I think there's 4 schools of Investing all of which are images of some deeply unified theory. Value, which states small and difficult to love is the place to be, Growth, which says things with good returns on capital and growing therefore generating more earnings in the future and reasonably priced is the place to be. Additionally, there are the schools of Chaos, which states simply do whatever you want for any reason but make sure you're protected and insured, as long as you're in the game keep trying and doing things technical or fundamental it doesn't matter, and finally Mathematical, which says you can by sufficiently modelling things predict on an aggregate basis what will happen as with classical mechanics and therefore drive some returns on a large amount of small advantage trade.
 
 ## With Repect to Greatness
 
