@@ -5,6 +5,8 @@ Humans as a species really are much like a single child alone in space it seems,
 
 Given that life in itself is just like a game, or more accurately we make it as such, we can think of improving in a certain place as grinding like in WoW, and in the same way with being able to understand runes, exploring the lore, getting better at combat, becoming a better merchant, going on quests, and just sandboxing is all part of the fun and the expirience, so too is it the case for any discipline or field. Watching streamers do random things is also part of the expirience, it also speaks to a lot of how to structure the way you play because rarely do you want to be frustrated or irritated while playing, but you do want to get better and be the best.
 
+I'm surrounded by magic yet fundamentally unable to harness it, because the method of instruction clashes with my mind, the purposes for which I want to harness are unable to satiate my need or food and shelter, and most fundamentally I can't seem to find what I really do want to apply it to/have a metric that allows me to be satisfied and not need more and more info about everything and a want to do everything.
+
 ## With Respect to the Consequences of Fat Tails in Statistical Statements
 
 It may be that the very infrastructure on which we model may be wrong, and that far too many normality and modelability assumptions are made, and this may present a crack that has yet to be discovered, and requires only such a tail event to occur for it to blow up on us. Though it is always possible that rather everything is fine.
