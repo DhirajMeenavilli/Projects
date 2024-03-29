@@ -134,6 +134,8 @@ If such a system is adopted and you have a verbalistic and engineered mathematic
 
 I think with respect to any work begining first by understanding deeply the environment and space of the problem though time consuming can lead to much clearer visions of what is to be done should a certain goal be fullfilled.
 
+You get to choose your own customers, and at the start you only really have one customer to choose from, you. After that though you can start listening to which customers you like and find their critiques to be reasonable and something which doesn't somehow make your expirience with the thing worse.
+
 ## With Repect to Teaching and Sharing
 
 When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.
