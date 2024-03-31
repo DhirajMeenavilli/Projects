@@ -136,6 +136,8 @@ I think with respect to any work begining first by understanding deeply the envi
 
 You get to choose your own customers, and at the start you only really have one customer to choose from, you. After that though you can start listening to which customers you like and find their critiques to be reasonable and something which doesn't somehow make your expirience with the thing worse.
 
+Once you have your 2 things (1 personal and 1 field application type thing) which you want to be the greatest, chase that and in doing so you'll naturally find the application of techniques you're interested in, in things which lie outside the immedeate "field" of the thing in which you want to be the greatest. But reading broadly for exposure to ideas just to see how things work out is still a good idea but only in time you're not spending getting better at the thing you want to be the greatest in.
+
 ## With Repect to Teaching and Sharing
 
 When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.
