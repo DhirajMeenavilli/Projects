@@ -138,6 +138,8 @@ You get to choose your own customers, and at the start you only really have one 
 
 Once you have your 2 things (1 personal and 1 field application type thing) which you want to be the greatest, chase that and in doing so you'll naturally find the application of techniques you're interested in, in things which lie outside the immedeate "field" of the thing in which you want to be the greatest. But reading broadly for exposure to ideas just to see how things work out is still a good idea but only in time you're not spending getting better at the thing you want to be the greatest in.
 
+Going to the level of research papers, or annual reports is a secondary step after the vocab, grammar, and history are relatively well understood, to approximately the graduate level. After that's done the deeper papers on which to form your opinion are something to be accessed to either 1. Learn more for breadth/depth purposes or 2. Solve a specific problem you are facing, other than that though there's no point of putting yourself through it.
+
 ## With Repect to Teaching and Sharing
 
 When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.
