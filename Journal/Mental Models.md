@@ -72,7 +72,7 @@ Fat Tails: More mountains and fewer stones and boulders than would be expected u
 
 Volatility Spikes: In organic systems like life, business, love, etc. Things usually go moderately ok to moderately not ok with occasional spikes of things going terrible right or terribly wrong. A mix of fat tails, critical points, and non-linearity.(Philosophy)
 
- Expectation vs Realization: In any situation there is the expectation (median) outcome, and the potentially realized (lower bound) outcome, and you have to be comfortable with both. Like chasing being a doctor or trumpet player without considering what happens if the expectation is not realized and how that affects you. (Philosophy)
+Expectation vs Realization: In any situation there is the expectation (median) outcome, and the potentially realized (lower bound) outcome, and you have to be comfortable with both. Like chasing being a doctor or trumpet player without considering what happens if the expectation is not realized and how that affects you. (Philosophy)
 
 Debugging: The act of tooling through the various procedures and operations. If there are patterns which are causing improper output from out of sample data. (Programming)
 
@@ -105,3 +105,7 @@ Mapping: When you take a point in one vector space and then transform it via con
 Howards Law: When there is something in the world which works safely for the purpose it was built such as a security for making money, a technology for statistical inferenc, etc. people will then rush to that "thing" and apply it more and more sloppily until there's a collapse with that thing at the bottom. (Investing/Economics)
 
 Tools, Techniques, and History: This idea is tangentially related to the idea of concepts, heuresistics, and tricks from the Draftsmen podcast. Basically there are tools, or vocab, which are the fundamental models of the logical structure, Techniques, which are both transformations upon the logical structures themselves, and ways to transform a problem in problem space to this logical abstraction. Finally History shows us how very clever uses mighthave either 1. Solved the problem formalised in a certain fashion, or 2. Solved a problem with some very clever tricks which if we can just get our current abstraction into that form/shape we can use their tricks to get to the solution, which is effectively 1. but with a little more work in some sense. (Art)
+
+Scattering Theory: Take something you understand throw it at something you don't understand, see how the thing you know responds/scatters/relects and then make some hypothesis/theory as to why it does that. (Physics)
+
+Ease of Falsification: Follow the hypothesis which are easiest to falsify, as in those hypotheisis which cost the least resources to falsify should be pursued, alternatively harpooning the whale i.e. falsifying the hypothesis which has the highest probability of being the correct one in your opinion may be slower, therefore that's the tradeoff one needs to consider. (Philisophy)
