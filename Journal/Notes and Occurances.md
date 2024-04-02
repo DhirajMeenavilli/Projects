@@ -140,6 +140,8 @@ Once you have your 2 things (1 personal and 1 field application type thing) whic
 
 Going to the level of research papers, or annual reports is a secondary step after the vocab, grammar, and history are relatively well understood, to approximately the graduate level. After that's done the deeper papers on which to form your opinion are something to be accessed to either 1. Learn more for breadth/depth purposes or 2. Solve a specific problem you are facing, other than that though there's no point of putting yourself through it.
 
+Work is as much self selection as anything in the world, because you have to act in a fashion agreeable to the system which provides you the nutrients, sufficient you are able to enjoy the labor or able to garner the rewards via your labor and able to express yourself as you are, you are able to and good to keep surviving in that place and being yourself you are in fact living. In the case that is not true, i.e. For one reason or another the system about you rejects you or fails around you, it is simply your perogative to find another in which you can garner rewards by your labor and be yourself.
+
 ## With Repect to Teaching and Sharing
 
 When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.
