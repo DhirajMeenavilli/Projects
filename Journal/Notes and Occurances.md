@@ -142,6 +142,8 @@ Going to the level of research papers, or annual reports is a secondary step aft
 
 Work is as much self selection as anything in the world, because you have to act in a fashion agreeable to the system which provides you the nutrients, sufficient you are able to enjoy the labor or able to garner the rewards via your labor and able to express yourself as you are, you are able to and good to keep surviving in that place and being yourself you are in fact living. In the case that is not true, i.e. For one reason or another the system about you rejects you or fails around you, it is simply your perogative to find another in which you can garner rewards by your labor and be yourself.
 
+With respect to the specifics of machine learning work, or more accurately the devolpment of solutions for money, there's a simple 5 step chain: 1. Frame the business problem/method of value add in the simplest way, 2. Understand the structure of the problem by formalising it from 1. to a computable/mathematical (domain reasonable) problem, 3. Build/use the simplest/most common solution to the formalism of 2., 4. See how/why the method in 3. fails to deliver exactly what you need and iterate, 5. Adapt/refine the solution in a reasonable fashion from 4. to what the customer wants/has ease with, in terms of use.
+
 ## With Repect to Teaching and Sharing
 
 When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.
