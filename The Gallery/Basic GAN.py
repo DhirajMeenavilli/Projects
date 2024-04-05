@@ -47,7 +47,7 @@ alpha = 0.00001
 lossFunction = nn.BCEWithLogitsLoss() # More numerically stable ecause it uses the logits and normalises first before calculating BCE Loss.
 batchSize = 128
 
-infoStep = 100 # After how may steps we want information about the training etc. to be displayed
+infoStep = 23450 # After how may steps we want information about the training etc. to be displayed
 meanGeneratorLoss = 0
 meanDiscriminatorLoss = 0
 noiseVectorDimension = 64
@@ -145,12 +145,88 @@ class Discriminator(nn.Module):
         return self.discriminator(image)
 
 gen = Generator(noiseVectorDimension).to(device)
-gen_opt = torch.optim.Adam(gen.parameters(), lr=alpha) 
+genaratorOptimizer = torch.optim.Adam(gen.parameters(), lr=alpha) 
 disc = Discriminator().to(device)
-disc_opt = torch.optim.Adam(disc.parameters(), lr=alpha)
+discriminatorOptimizer = torch.optim.Adam(disc.parameters(), lr=alpha)
 
 x,y = next(iter(dataLoader)) # Likely replace by a dataset class
 
-noise = generateNoise(batchSize, noiseVectorDimension)
-fake = gen(noise)
-show(fake)
+# Calculating the Loss
+
+# Generator Loss
+def calcGeneratorLoss(lossFunc, gen, disc, number, noiseVectorDimension):
+    """
+    :function calcGeneratorLoss:
+    
+    :param lossFunc:
+    :param gen:
+    :param disc:
+    :param number:
+    :param noiseVectorDimension:
+
+    :return:
+    """
+    noise = generateNoise(number, noiseVectorDimension)
+    fake = gen(noise)
+    pred = disc(fake)
+    targets = torch.ones_like(pred) # Means all of the ones the discrimanator said are real
+    genLoss = lossFunc(pred, targets)
+
+    return genLoss
+
+def calcDiscLoss(lossFunc, gen, disc, number, realImages, noiseVectorDimension):
+    """
+    
+    """
+    noise = generateNoise(number, noiseVectorDimension)
+    fake = gen(noise)
+    discFake = disc(fake.detach()) # We datch so that we don't accidentally touch the generator
+    
+    discFakeTargets = torch.zeros_like(discFake)
+    discFakeLoss = lossFunc(discFake, discFakeTargets)
+
+    discReal = disc(realImages)
+    discRealTargets = torch.ones_like(discReal)
+    discRealLoss = lossFunc(discReal, discRealTargets)
+
+    discLoss = (discFakeLoss + discRealLoss) / 2 # Afloat is valid I suppose
+
+    return discLoss
+
+for epcoch in range(epochs):
+    for real, _ in tqdm(dataLoader): # For each value returned we store the real values/images and the labels but we discard the labels as they're unneeded for the generator portion of GAN.
+        # It should be noted additionally the tqdm gives us an easy way to have progress bars of our training loop.
+        
+        ### Discriminator
+        if currentStep % 8 == 0:
+            discriminatorOptimizer.zero_grad()
+
+            currentBatchSize = len(real)
+            real = real.view(currentBatchSize, -1)
+            real = real.to(device)
+
+            discLoss = calcDiscLoss(lossFunction, gen, disc, currentBatchSize, real, noiseVectorDimension)
+
+            discLoss.backward(retain_graph=False) # Frees the graph in memory
+            discriminatorOptimizer.step()
+
+        ### Generator
+
+        genaratorOptimizer.zero_grad()
+        generatorLoss = calcGeneratorLoss(lossFunction, gen, disc, currentBatchSize, noiseVectorDimension)
+        generatorLoss.backward(retain_graph = False)
+        genaratorOptimizer.step()
+
+        ### Visualisation and Steps
+        meanDiscriminatorLoss += discLoss.item()/infoStep
+        meanGeneratorLoss += generatorLoss.item()/infoStep
+
+        if currentStep % infoStep == 0 and currentStep != 0:
+            fakeNosie = generateNoise(currentBatchSize, noiseVectorDimension)
+            fake = gen(fakeNosie)
+            show(fake)
+            show(real)
+            print(f"{epcoch}: step {currentStep}, Gen Loss: {meanGeneratorLoss}, Disc Loss: {meanDiscriminatorLoss}")
+            meanGeneratorLoss, meanDiscriminatorLoss = 0, 0
+        
+        currentStep += 1
