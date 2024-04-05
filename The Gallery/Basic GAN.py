@@ -15,9 +15,9 @@ from tqdm.auto import tqdm
 import matplotlib.pyplot as plt
 
 # Visualisation Function
-def Show(tensor, ch = 1, size = (28,28), num = 16):
+def show(tensor, ch = 1, size = (28,28), num = 16):
     """
-    :function Show: Shows a number of images in a grid fashion of a given size with a given number of color channels
+    :function show: Shows a number of images in a grid fashion of a given size with a given number of color channels
     
     :param tensor: Is the tensor from which we show the images?
     :param ch: Describes the number of channels in the images to be shown
@@ -26,7 +26,7 @@ def Show(tensor, ch = 1, size = (28,28), num = 16):
     
     :return: None 
     """
-    data = tensor.detatch().cpu().view(-1, ch, *size)
+    data = tensor.detach().cpu().view(-1, ch, *size)
     # Detatches the variable from the computation of the gradients, so that we can just do visulaisation without affecting the computations as we visulaise.
     # We also take the tensor to the CPU as opposed to keeping it on GPU for visulaisation purposes.
     # Finally we return a view of the tensor so as to not disturb the tensor, but of the form (128, 1, 28, 28) from the original form of (128, 784) 
@@ -89,7 +89,68 @@ class Generator(nn.Module):
         )
     
     def forward(self, noise):
+        """
+        :function forward: The auto forward call for the class
+
+        :param noise: The noise vector
+
+        :return: a forward call on the noise vector passed in
+        """
         return self.genarator(noise) # I'm not sure to what the noise vector we're passing in is getting mapped I suppose it's taken as the litteral input vector
     
 def generateNoise(number, noiseVectorDimension):
+    """
+    :function generateNoise: Generates a noise vector
+
+    :param number: A random number
+    :param noiseVectorDimension: The size of the noise vector
+
+    :return: A random vector of size noiseVectorDimension
+    """
     return torch.randn(number, noiseVectorDimension).to(device)
+
+def discBlock(inp, out):
+    """
+    :function discBlock: Creates a Discriminator Block
+
+    :param inp: The number of nodes for input layer
+    :param out: The number of nodes for output layer
+
+    :return: The architecture for a discrimanator block
+    """
+    return nn.Sequential(
+        nn.Linear(inp, out),
+        nn.LeakyReLU(0.2) # So that the vanishing gradients problem may be avoided by allowing a smal boundry around 0 in the negative region not to be snapped to 0 but smoothly curved in.
+    )
+
+class Discriminator(nn.Module):
+    def __init__(self, i_dim = 784, h_dim = 256) -> None:
+        super().__init__()
+        self.discriminator = nn.Sequential(
+            discBlock(i_dim,  h_dim*4), # We start big and get small
+            discBlock(h_dim*4, h_dim*2),
+            discBlock(h_dim*2, h_dim),
+            nn.Linear(h_dim, 1),
+            
+        )
+    
+    def forward(self, image):
+        """
+        :function forward: The auto forward call for the class
+
+        :param image: The vector of the image to be classified
+
+        :return: a forward call on the image to be classified
+        """
+        return self.discriminator(image)
+
+gen = Generator(noiseVectorDimension).to(device)
+gen_opt = torch.optim.Adam(gen.parameters(), lr=alpha) 
+disc = Discriminator().to(device)
+disc_opt = torch.optim.Adam(disc.parameters(), lr=alpha)
+
+x,y = next(iter(dataLoader)) # Likely replace by a dataset class
+
+noise = generateNoise(batchSize, noiseVectorDimension)
+fake = gen(noise)
+show(fake)
