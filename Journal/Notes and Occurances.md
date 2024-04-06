@@ -227,4 +227,6 @@ Manifold learning, is the learning of the shape of the manifold that matches the
 
 Even if you can't say what the function is, you need to be able to say why a point in your input space should map to a point in an output space if you yourself don't have the clarity there's no reason a machine would.
 
-Imaginative Philisophical imagination and insights will lead to the next edge of machine learning/computing/math/physics etc.
+Imaginative Philisophical insights will lead to the next edge of machine learning/computing/math/physics etc.
+
+A method of humans being able to turn their knowledge of why an output is wrong into changes in the weights of the neural architecture is proably a good step forward, along with regular debugging and visulaisation techniques which turn the network into something tuneable. Also a good set of inputs are ones which map well to the given outputs by logic or something and a good set of outputs are ones which are easily mapped to, making the outputs something easy to learn means the NN is more likely to get it right and then passing that off to the next model or part of the algorithim is probably the way to go.
