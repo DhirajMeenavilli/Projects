@@ -11,6 +11,8 @@ I got so caught up in showing people in positions of power that I'm interested a
 
 Envy (The desire of what others have) and Ego (The desire for what you don't have) it appears to me to be the greatest sources of noise, which if reduced or eliminated allow one to focus deeply on the signals of expierence itself to enjoy the universe and work, and proverbially paint with all the colors of the wind.
 
+Oftentimes the greatest self impedement is the reflection on cohesion during the proccess of creation or construction. I find it is much better to simply write, paint, work, etc. in flow creating what you need as you need it, and then once it's all done cohesively wrapping it up into a nice bundle via comments, logic, flowcharting, etc.
+
 ## With Respect to the Consequences of Fat Tails in Statistical Statements
 
 It may be that the very infrastructure on which we model may be wrong, and that far too many normality and modelability assumptions are made, and this may present a crack that has yet to be discovered, and requires only such a tail event to occur for it to blow up on us. Though it is always possible that rather everything is fine.
