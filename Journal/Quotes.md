@@ -13,3 +13,5 @@
 "It is not death that a (one) should fear, but rather never beginning to live." - Marcus Aerelius, 1XX
 
 "You get what you reward." - Charlie Munger, 19XX
+
+"Prediction is a parameterization of understanding" - Krakauer, 2023
