@@ -154,6 +154,8 @@ There's really no book or video or podcast or anything else which acts as a subs
 
 It appears additionally to me from what I've observed that there's no value to considering the time components of things in non linear activities such as creation or generation or research only showing up chopping the wood, carrying the water, and planting the seeds, and a belief in oneself along with a belief in a kind universe which atleast sufficiently vindicates someone who is trying their best and that things will thus get to be when they get to be, as in don't worry about time just do the best you can in a given moment and know that your best is your best and it will generally be sufficient and when it's not you can learn.
 
+Finally it appears to me that while productivity drops off with time, in a state of flow less mentally taxing tasks become almost natural given mindful application of oneself, and also there appears to be no way to avoid obstacles. Only to confront them and truly wrestle with them even though you have not the briefest clue of what it is you might be doing.
+
 ## With Repect to Teaching and Sharing
 
 When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.
