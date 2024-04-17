@@ -1,0 +1,1 @@
+## I'll put my ideas of what company I'm looking at here and you have to guess what the thesis is.
