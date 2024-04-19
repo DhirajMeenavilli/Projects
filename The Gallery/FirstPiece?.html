@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Black Hole Size</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #fff;
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+        overflow-y: hidden; /* Disable vertical scrolling */
+    }
+    .star {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        background-color: #fff;
+        border-radius: 50%;
+        pointer-events: none; /* Allow interaction through stars */
+    }
+    #stage {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        perspective: 1000px; /* Perspective for 3D effect */
+        overflow: hidden; /* Hide overflowing stars */
+    }
+    #starsContainer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-style: preserve-3d; /* Preserve 3D positioning */
+    }
+    #blackHoleContainer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #blackHole {
+        background-color: #000;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.3);
+        margin: 0 auto;
+        transition: width 0.5s, height 0.5s; /* Add transition for smooth resizing */
+    }
+    #sun {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        background: radial-gradient(circle, #fffb00, #ffbe00, transparent);
+        border-radius: 50%;
+        right: -50px; /* Offscreen on the right */
+        top: calc(50% - 60px); /* Center vertically */
+        box-shadow: 0 0 30px 10px rgba(255, 190, 0, 0.8); /* Add glowing effect */
+        animation: sunPulse 5s linear infinite alternate; /* Add animation */
+        pointer-events: none; /* Allow interaction through sun */
+    }
+    @keyframes sunPulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+    }
+    #dataText {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    #spaceshipGlass {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+    }
+</style>
+</head>
+<body>
+
+<!-- There's a real cost in terms of electricity, coal, water, and labor in my making of this art -->
+<div id="costComment">
+    <p>There's a real cost in terms of electricity, coal, water, and labor in my making of this art</p>
+</div>
+
+<div id="stage">
+
+    <!-- Spaceship Glass -->
+    <div id="spaceshipGlass"></div>
+
+    <!-- Background Stars -->
+    <div id="starsContainer"></div>
+
+    <h1>Black Hole Size</h1>
+    <p id="dataText"></p>
+
+    <div id="blackHoleContainer">
+        <div id="blackHole"></div>
+    </div>
+
+    <div id="sun"></div>
+
+</div>
+
+<script>
+    // Disable vertical scrolling
+    document.body.style.overflowY = 'hidden';
+
+    // Generate stars in a 3D space with movement
+    const starsContainer = document.getElementById('starsContainer');
+    const numStars = 500; // Number of stars
+    const radius = 2000; // Radius of the sphere
+    const speed = 0.1; // Speed of star movement
+    for (let i = 0; i < numStars; i++) {
+        const theta = Math.random() * Math.PI * 2;
+        const phi = Math.random() * Math.PI;
+        const x = radius * Math.sin(phi) * Math.cos(theta) + window.innerWidth / 2;
+        const y = radius * Math.sin(phi) * Math.sin(theta) + window.innerHeight / 2;
+        const z = radius * Math.cos(phi);
+        const size = Math.random() * 4 + 1; // Random size for stars
+        const brightness = Math.random() * 0.8 + 0.2; // Random brightness
+        const star = document.createElement('div');
+        star.className = 'star';
+        star.style.left = `${x}px`;
+        star.style.top = `${y}px`;
+        star.style.transform = `translateZ(${z}px)`; // Position in 3D space
+        star.style.width = `${size}px`;
+        star.style.height = `${size}px`;
+        star.style.backgroundColor = `rgba(255, 255, 255, ${brightness})`; // Set brightness
+        starsContainer.appendChild(star);
+
+        // Add dynamic movement to stars
+        const initialX = x;
+        const initialY = y;
+        const initialZ = z;
+        setInterval(() => {
+            const time = Date.now() * speed;
+            const newX = initialX + Math.sin(time) * 0.1;
+            const newY = initialY + Math.cos(time) * 0.1;
+            const newZ = initialZ + Math.cos(time) * 0.1;
+            star.style.left = `${newX}px`;
+            star.style.top = `${newY}px`;
+            star.style.transform = `translateZ(${newZ}px)`;
+        }, 100);
+    }
+
+    // Get references to DOM elements
+    const blackHole = document.getElementById('blackHole');
+    const sun = document.getElementById('sun');
+    const dataText = document.getElementById('dataText');
+
+    // Initial black hole mass (in solar masses)
+    let blackHoleMass = 0;
+
+    // Update black hole size and position
+    function updateBlackHole() {
+        // Calculate black hole size based on mass
+        const diameter = Math.sqrt(blackHoleMass) * 20; // Arbitrary scaling factor
+        blackHole.style.width = `${diameter}px`;
+        blackHole.style.height = `${diameter}px`;
+
+        // Calculate mass equivalent to Earth's data storage (in kg)
+        const earthInfo = 33e18; // kg (Estimated data storage of Earth in bytes)
+        const blackHoleEquivalent = blackHoleMass * 7e18; // kg (1 solar mass = 7e29 kg)
+        const earthsEquivalent = blackHoleEquivalent / earthInfo;
+
+        // Display the calculated data
+        dataText.textContent = `The black hole could encode approximately ${earthsEquivalent.toFixed(2)} times the data storage of Earth on its surface.`;
+    }
+
+    // Event listener for scroll event
+    window.addEventListener('scroll', function() {
+        // Update black hole mass based on scroll position
+        blackHoleMass = window.scrollX / 1000; // Arbitrary conversion factor
+        updateBlackHole();
+    });
+
+    // Event listener for keydown event
+    window.addEventListener('keydown', function(event) {
+        // Adjust black hole mass based on arrow key presses
+        switch (event.key) {
+            case 'ArrowLeft':
+                blackHoleMass -= 1;
+                break;
+            case 'ArrowRight':
+                blackHoleMass += 1;
+                break;
+        }
+        // Update black hole size
+        updateBlackHole();
+    });
+
+    // Initial update
+    updateBlackHole();
+</script>
+
+</body>
+</html>
