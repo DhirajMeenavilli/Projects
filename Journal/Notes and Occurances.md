@@ -156,6 +156,8 @@ It appears additionally to me from what I've observed that there's no value to c
 
 Finally it appears to me that while productivity drops off with time, in a state of flow less mentally taxing tasks become almost natural given mindful application of oneself, and also there appears to be no way to avoid obstacles. Only to confront them and truly wrestle with them even though you have not the briefest clue of what it is you might be doing.
 
+You have to actually do the work not just have ideas.
+
 ## With Repect to Teaching and Sharing
 
 When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.
