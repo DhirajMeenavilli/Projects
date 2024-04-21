@@ -178,6 +178,8 @@ A perfect lecture would strike the balance between concise, conversational, and 
 
 Definitions and intros are the scariest bit, however once it's understood just as vocab i.e. the tools of consructing everything else, is the hardest bit especially in isolation. But once you learn the vocab relatively well, the grammar and so on becomes exceptionally easier because you understand the things you're saying, hence you can tailor it to what you want to say.
 
+Never speak on anything you have not entirely rederrived for yourself.
+
 ## With Respect to Finance
 
 Perhaps because the question of how much should a lender charge a borrower in isolation is an almost to impossible question to answe, we swapped it out instead for the question of what rate can you charge to maximize profit for the firm? 
