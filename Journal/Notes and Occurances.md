@@ -158,6 +158,8 @@ Finally it appears to me that while productivity drops off with time, in a state
 
 You have to actually do the work not just have ideas.
 
+Take everything to be true and unnecessary of proof, on the first pass, after that on the second pass you can ask what the implications of those truths are, and by the third you can begin to reason as why they may not in fact be true.
+
 ## With Repect to Teaching and Sharing
 
 When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.
