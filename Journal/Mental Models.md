@@ -113,3 +113,7 @@ Ease of Falsification: Follow the hypothesis which are easiest to falsify, as in
 Bayesian Problem Tree: Basically just start with your question, list out some hypothesis as the solution, then form branches under the one which you think most likely or most desirable, and those branches effectively become the hypotheses you belive that given that this is the right branch to be coming down to solve your problem what is the probability of this being the solution and you repeat that until you get to something testable and then you test it and figure out what it's scattering meant, from a list of Bayesian reasons, and then you keep crossing out and coming up with new hypothesis until you give up, or it's proved that it's solved or unsolveable. (Probability)
 
 Prompt Tuning: Changing the output taken as input to the system to get the construction you imagined more closely approximated as you do the dance of figuring out what you want and what the system produces. (Scultping/Computing Sciences)
+
+Mountaineering: To get better and to try and reach higher summits, not only do you need, skill, luck, and gear all of which in some sense of the word allow you to climb, but also the ability to path find, to know when to explore, when to persist, and when to back track. (Exploration)
+
+Chain Reaction: It's exceptionally hard to get going depending on what it is you're doing but when you do set it off, things go exceptionally faster and further than one can think they may go. (Physics)
