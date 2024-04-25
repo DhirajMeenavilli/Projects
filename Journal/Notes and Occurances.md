@@ -160,6 +160,8 @@ You have to actually do the work not just have ideas.
 
 Take everything to be true and unnecessary of proof, on the first pass, after that on the second pass you can ask what the implications of those truths are, and by the third you can begin to reason as why they may not in fact be true.
 
+Making mystical hypothesis is the bread and butter of any scientific research, it is the essence of progress, but one has to remember not to get caught up on it, rather to massage the theory until you get a prediction from it and then to adaquetly test the prediction by means of naive falsfication using an expectations based Bayesian Solution Tree.
+
 ## With Repect to Teaching and Sharing
 
 When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.

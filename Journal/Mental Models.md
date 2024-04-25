@@ -117,3 +117,5 @@ Prompt Tuning: Changing the output taken as input to the system to get the const
 Mountaineering: To get better and to try and reach higher summits, not only do you need, skill, luck, and gear all of which in some sense of the word allow you to climb, but also the ability to path find, to know when to explore, when to persist, and when to back track. (Exploration)
 
 Chain Reaction: It's exceptionally hard to get going depending on what it is you're doing but when you do set it off, things go exceptionally faster and further than one can think they may go. (Physics)
+
+Bayesian Solution Tree: Beggining with a question, generate assumptions as well as probabilities of those assumptions being accurate then work through until you get to a logical conclusion, meaning a testable hypothesis, at which point you conduct your expiriment and then use the evidence gathered to both update the tree and find contradictions so that you can rule certain assumptions/hypothesis out. (Probability)
