@@ -119,3 +119,5 @@ Mountaineering: To get better and to try and reach higher summits, not only do y
 Chain Reaction: It's exceptionally hard to get going depending on what it is you're doing but when you do set it off, things go exceptionally faster and further than one can think they may go. (Physics)
 
 Bayesian Solution Tree: Beggining with a question, generate assumptions as well as probabilities of those assumptions being accurate then work through until you get to a logical conclusion, meaning a testable hypothesis, at which point you conduct your expiriment and then use the evidence gathered to both update the tree and find contradictions so that you can rule certain assumptions/hypothesis out. (Probability)
+
+Entropy: Being a measure of the number of ways that constituient parts may be arranged, if minimizable by one form or another, leads to an ease of solution of the problem formulated. Very simmilar to a search space pruning algorithim way of thinking about problems. (Physics/Information Theory)
