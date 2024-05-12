@@ -164,6 +164,8 @@ Making mystical hypothesis is the bread and butter of any scientific research, i
 
 Set up a tangible goal, believe in yourself, God/luck, and put head to grindstone and just commit work every day to sharpen the ask, so that once the day comes to do things you can be undeniable. Simply iterate, improve, and keep seeking the truth of the system.
 
+One devolps physical theories i.e. theories of the input output reactions in the world via trial and error, and those theories are then affirmed, discredited, or revised based on the ability to generalise them from observation, to statements of statistical, logical, and =1 mathematical accuracy which reflect the underlying generator better than a single set of expiriments. This is true for machine learning, and computing, economics and the stock market, and probably also the universe as a whole. Throw things you understand at something you don't see how it reacts and responds, and then find a way to exploit the pattern of input/output behaviour via intuition that you scratch down in symbols to represent what you need.
+
 ## With Repect to Teaching and Sharing
 
 When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.
