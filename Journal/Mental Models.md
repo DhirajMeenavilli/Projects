@@ -123,3 +123,5 @@ Bayesian Solution Tree: Beggining with a question, generate assumptions as well 
 Entropy: Being a measure of the number of ways that constituient parts may be arranged, if minimizable by one form or another, leads to an ease of solution of the problem formulated. Very simmilar to a search space pruning algorithim way of thinking about problems. (Physics/Information Theory)
 
 Entangelment: The information of a system doesn't reside in any single quantum of a system but rather in the correlations between various parts of the system, simmilar to the idea of a sentence or a neural network, no one word or node holds any information per se, but the information embedded in the structure arises from the correlation among the system to produce meaning and structure. (Physics)
+
+Filtering In/Filtering Out: Coordination such that everything certainly undesireable is filtered out. Then attempt to mold and attract all that which you desire from what is left over. All the better if you can do both in one form i.e. behaviour. (Biology/Marketing)
