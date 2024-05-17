@@ -188,6 +188,8 @@ Definitions and intros are the scariest bit, however once it's understood just a
 
 Never speak on anything you have not entirely rederrived for yourself.
 
+Switch between any 2 reasonable hypothesis (any hypothesis which to a reasonable degree fits the facts of which you're aware) should one be more probably useful.
+
 ## With Respect to Finance
 
 Perhaps because the question of how much should a lender charge a borrower in isolation is an almost to impossible question to answe, we swapped it out instead for the question of what rate can you charge to maximize profit for the firm? 
