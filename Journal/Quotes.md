@@ -17,3 +17,5 @@
 "Prediction is a parameterization of understanding" - Krakauer, 2023
 
 "If you give me 6hours to chop down a tree, I'll spend the first 4 sharpening my axe" - Abraham Lincoln, 18XX
+
+"Only way is 'Stay on stage'." - Tip Harris, 2024
