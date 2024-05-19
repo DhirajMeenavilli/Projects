@@ -13,6 +13,8 @@ Envy (The desire of what others have) and Ego (The desire for what you don't hav
 
 Oftentimes the greatest self impedement is the reflection on cohesion during the proccess of creation or construction. I find it is much better to simply write, paint, work, etc. in flow creating what you need as you need it, and then once it's all done cohesively wrapping it up into a nice bundle via comments, logic, flowcharting, etc.
 
+Try and resolve situations favorably (this generally means everyone is happier), if not possible and not life threatning, just split, that's what good intuition tells us to do.
+
 ## With Respect to the Consequences of Fat Tails in Statistical Statements
 
 It may be that the very infrastructure on which we model may be wrong, and that far too many normality and modelability assumptions are made, and this may present a crack that has yet to be discovered, and requires only such a tail event to occur for it to blow up on us. Though it is always possible that rather everything is fine.
