@@ -19,3 +19,9 @@
 "If you give me 6hours to chop down a tree, I'll spend the first 4 sharpening my axe" - Abraham Lincoln, 18XX
 
 "Only way is 'Stay on stage'." - Tip Harris, 2024
+
+"Don't go somewhere with no competition, there's a reason there's no competition. Go somewhere with weak compeition" - ?, 2023
+
+"There is no such thing as competition, there is only cooperation" - KRS-ONE, 201X
+
+"Law against natural order is chaos." - KRS-ONE, 201X
