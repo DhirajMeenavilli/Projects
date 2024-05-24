@@ -25,3 +25,5 @@
 "There is no such thing as competition, there is only cooperation" - KRS-ONE, 201X
 
 "Law against natural order is chaos." - KRS-ONE, 201X
+
+"Decide do it. Try. Fail. Learn. Hustle. Try Again. And keep going relentlessly." - Ellen Marie Bennet, 2021
