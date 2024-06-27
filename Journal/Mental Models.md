@@ -118,10 +118,16 @@ Mountaineering: To get better and to try and reach higher summits, not only do y
 
 Chain Reaction: It's exceptionally hard to get going depending on what it is you're doing but when you do set it off, things go exceptionally faster and further than one can think they may go. (Physics)
 
-Bayesian Solution Tree: Beggining with a question, generate assumptions as well as probabilities of those assumptions being accurate then work through until you get to a logical conclusion, meaning a testable hypothesis, at which point you conduct your expiriment and then use the evidence gathered to both update the tree and find contradictions so that you can rule certain assumptions/hypothesis out. (Probability)
+Bayesian Solution Tree: Beginning with a question, generate assumptions as well as probabilities of those assumptions being accurate then work through until you get to a logical conclusion, meaning a testable hypothesis, at which point you conduct your expiriment and then use the evidence gathered to both update the tree and find contradictions so that you can rule certain assumptions/hypothesis out. (Probability)
 
 Entropy: Being a measure of the number of ways that constituient parts may be arranged, if minimizable by one form or another, leads to an ease of solution of the problem formulated. Very simmilar to a search space pruning algorithim way of thinking about problems. (Physics/Information Theory)
 
 Entangelment: The information of a system doesn't reside in any single quantum of a system but rather in the correlations between various parts of the system, simmilar to the idea of a sentence or a neural network, no one word or node holds any information per se, but the information embedded in the structure arises from the correlation among the system to produce meaning and structure. (Physics)
 
 Filtering In/Filtering Out: Coordination such that everything certainly undesireable is filtered out. Then attempt to mold and attract all that which you desire from what is left over. All the better if you can do both in one form i.e. behaviour. (Biology/Marketing)
+
+Behaviour in a Storm: First and foremost check the atmosphere, use your indicators, because the weather will be what it will be. If there's a storm coming stay inside, or if you're outside, get inside and tuck your head in and sleep through it. (Philosophy)
+
+Scar Tissue: As you live life, the cuts and burns naturally settle into your essence as permanent markers and memories, both so that you can be reminded and strengthned by looking at them, and so that you have your past expirieinces passively helping you in your present. (Biology/Philosophy)
+
+Punyam/Papam: Actions have an inherent reward built into them as expressed by your immediate internal state and the future internal states you end up in as a result of taking one action or another, the more positive rewarding actions you take, the better life becomes, the more negative rewarding actions, the worse life becomes. This is akin to the philosophy underlying RL and as such is only true in expectation and only apparent via trend.
