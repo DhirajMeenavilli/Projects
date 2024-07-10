@@ -170,6 +170,8 @@ One devolps physical theories i.e. theories of the input output reactions in the
 
 You can keep philosophin forever, but until you actually put metal to stone nothing happens. Thinking is good, but only in service of figuring out the next stop, it serves no purpose when done to simply bypass the pain of the present and get to some unanswerable question that you may have in the future. Simply put focus on the step in front of you, clearly define it, do it the best you can, and keep going until it's done. The rest is noise. And if you need something you can pick it up at such a time, just hope what you know is sufficient to let you see and exploit the problem in an efficient manner, or that you can find a resource/person to help you through it when you need it.
 
+Retyping a text fully after having fully read it once is probably the best way to get intimately fammiliar with a work and subject.
+
 ## With Repect to Teaching and Sharing
 
 When you have people of all different cultureal contexts, domain knowledge, incentives, and levels of resistance to different proposed ideas, one has to fundamentally come at the practice of teaching and sharing as not correct or incorrect but rather perhaps a fundamental set of tenants and beliefs, and the exact scope of the conversation.
