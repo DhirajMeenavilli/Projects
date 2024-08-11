@@ -128,6 +128,10 @@ Filtering In/Filtering Out: Coordination such that everything certainly undesire
 
 Behaviour in a Storm: First and foremost check the atmosphere, use your indicators, because the weather will be what it will be. If there's a storm coming stay inside, or if you're outside, get inside and tuck your head in and sleep through it. (Philosophy)
 
+Expirience Design: The concious shaping of the expirience of others and the self in order to achieve desires. (Metaphysics)
+
+
+
 Scar Tissue: As you live life, the cuts and burns naturally settle into your essence as permanent markers and memories, both so that you can be reminded and strengthned by looking at them, and so that you have your past expirieinces passively helping you in your present. (Biology/Philosophy)
 
 Punyam/Papam: Actions have an inherent reward built into them as expressed by your immediate internal state and the future internal states you end up in as a result of taking one action or another, the more positive rewarding actions you take, the better life becomes, the more negative rewarding actions, the worse life becomes. This is akin to the philosophy underlying RL and as such is only true in expectation and only apparent via trend. (Theology)
